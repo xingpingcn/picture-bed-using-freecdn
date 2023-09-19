@@ -1,2 +1,0 @@
-"use strict";$((function(){for(var t=document.getElementsByClassName("fancybox"),e=Array.prototype.filter.call(t,(function(t){return"A"===t.nodeName})),o=0;o<e.length;o++)console.log(e.length),e[o].setAttribute("style","background-color: rgb(204, 204, 204); padding-bottom: 50%;"),e[o].parentNode.setAttribute("style","position: relative; width: 100%;")}));
-//# sourceMappingURL=../maps/js/lazyload-placeholder.js.map
