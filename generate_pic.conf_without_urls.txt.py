@@ -7,7 +7,7 @@ requests
 import re
 import sys
 import os
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, wait
 import threading
 import hashlib
 import base64
@@ -103,8 +103,8 @@ def get_urls_in_md_file_and_generate(md_file: str, re_obj_list, re_obj_for_galle
             if is_vaild_url(res_url) and res_url not in url_list:
                 
                 url_list.append(res_url)
-                pool_for_write_file.submit(write_file,bak_file, res_url,
-                                file_to_w, cdn_list=cdn_list)
+                threading_list.append(pool_for_write_file.submit(write_file,bak_file, res_url,
+                                file_to_w, cdn_list=cdn_list)) 
     re_res_gallery_tag = re_obj_for_gallery_tag.findall(md_file) #读取文件中的url
     for res in re_res_gallery_tag:
         re_res_pic_tag = re_obj_for_pic_tag.findall(res)
@@ -112,8 +112,8 @@ def get_urls_in_md_file_and_generate(md_file: str, re_obj_list, re_obj_for_galle
             res_url = res_url.replace('\n', '')
             if is_vaild_url(res_url) and  res_url not in url_list:
                 url_list.append(res_url)
-                pool_for_write_file.submit(write_file,bak_file, res_url,
-                                file_to_w, cdn_list=cdn_list)
+                threading_list.append(pool_for_write_file.submit(write_file,bak_file, res_url,
+                                file_to_w, cdn_list=cdn_list)) 
     
         
 
@@ -124,6 +124,7 @@ re_obj_for_headimg_tag = re.compile(r'headimg:\s*(.*)')
 re_obj_for_gallery_tag = re.compile(r'\{\s*%\s*gallery([\s\S]*)endgallery\s*%\s*\}')
 re_obj_for_pic_tag = re.compile(r'!.*\((.*)\)')
 url_list = []
+threading_list = []
 try:
     os.remove('./pic.bak.conf')
 except:
@@ -153,5 +154,5 @@ with open('./pic.conf', 'w', encoding='utf8') as file_to_w:
                             re_obj_for_gallery_tag, re_obj_for_pic_tag,bak_file) #读取md文件后写入custom.conf
 
     pool.shutdown()
-    pool_for_write_file.shutdown()
+    wait(threading_list)
 print('done!')
