@@ -12,6 +12,7 @@ import threading
 import hashlib
 import base64
 import requests
+import urllib
 cdn_list = ['https://jsd.cdn.zzko.cn/gh/', 'https://cdn.jsdelivr.us/gh/',
             'https://cdn.jsdelivr.ren/gh/', 'https://cdn.jsdelivr.net/gh/']
 
@@ -45,7 +46,8 @@ def CalcFileSha256_with_base64(filname):
 def url_enconde_for_re(url: str):
     return url.replace('(', '\(').replace(')', '\)').replace('?', '\?').replace('*', '\*').replace('.', '\.').replace('|', '\|').replace('+', '\+')
 
-
+def url_encode(url):
+    return urllib.parse.quote(url).replace('%3A',':').replace('%40','@')
 def download_file_return_hash(line: str, headers=headers):
     res_url = f'{user}/'+line.split(f'/{user}/')[-1]
     path_url = res_url.replace('/', '')
@@ -95,11 +97,13 @@ def is_vaild_url(url):
         print(url)
         return False
 
+
 def get_urls_in_md_file_and_generate(md_file: str, re_obj_list, re_obj_for_gallery_tag, re_obj_for_pic_tag,bak_file):
     for re_obj in re_obj_list:
         re_res_link_tag = re_obj.findall(md_file) #读取文件中的url
         for res_url in re_res_link_tag:
             res_url = res_url.replace('\n', '')
+            res_url =url_encode(res_url) 
             if is_vaild_url(res_url) and res_url not in url_list:
                 
                 url_list.append(res_url)
@@ -110,6 +114,7 @@ def get_urls_in_md_file_and_generate(md_file: str, re_obj_list, re_obj_for_galle
         re_res_pic_tag = re_obj_for_pic_tag.findall(res)
         for res_url in re_res_pic_tag:
             res_url = res_url.replace('\n', '')
+            res_url =url_encode(res_url) 
             if is_vaild_url(res_url) and  res_url not in url_list:
                 url_list.append(res_url)
                 threading_list.append(pool_for_write_file.submit(write_file,bak_file, res_url,
