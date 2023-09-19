@@ -11,9 +11,9 @@ freecdn-js能提高网站稳定性，如果其中一个链接不可用则启用�
 
 只需要把放在github的图片url（以.xxx结尾，如.png、.css、.js）放在`urls.txt`，每行放一个url，并在同一个文件夹内运行`generate_custom.conf.py`，即可生成`custom.conf`。
 
-或者你也用hexo博客，那么可以使用`generate_pic.conf_without_urls.txt.py`根据`.md`（博客写作使用markdown）文件直接生成`pic.conf`，无需手动把url添加到`urls.txt`。`.md`放在`source\_posts`，或根据需要自行修改。
+或者你也用hexo博客，那么可以使用`generate_pic.conf_without_urls.txt.py`根据`.md`（博客写作使用markdown）文件直接生成`pic.conf`，无需手动把url添加到`urls.txt`。`.md`放在`source\_posts`，或根据需要自行修改。`.py`文件中的正则表达需要根据自己的需求更改。如果你也使用[hexo-volantis](https://github.com/volantis-x/community)可以试着直接运行。
 
-如果你像我一样把文件（图片和某些js）放在github，需要在`.py`头部设置`user`变量为你的github id（用于定位你的github图床）。例如我就是xingpingcn
+如果你像我一样把文件（图片和某些js）放在github，需要在`.py`文件头部设置`user`变量为你的github id（用于定位你的github图床）。例如我就是xingpingcn
 
 在`.py`文件头部可以设置是否使用代理（v2ray），需要自行设置。
 
