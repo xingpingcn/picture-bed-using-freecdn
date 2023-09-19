@@ -4,7 +4,7 @@
 
 经过验证，nodejs16.10.0能运行freecdn-js，如果有需要安装旧版本nodejs请使用nvm工具安装。
 
-freecdn-js能提高网站稳定性，如果其中一个链接不可用则启用另一个链接。但是freecdn-js对本身就在服务器端的文件不太友好（因为需要sha256），例如我把github作为图床而上传的图片，故写了一个python脚本处理hash和生成freecdn-js所需要的配置文件。
+freecdn-js能提高网站稳定性，如果其中一个链接不可用则启用另一个链接。但是freecdn-js对本身就在服务器端的文件不太友好（因为需要`sha256`），例如我把github作为图床而上传的图片，故写了一个python脚本处理hash和生成freecdn-js所需要的配置文件。
 
 
 
