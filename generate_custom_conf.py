@@ -4,6 +4,7 @@ nodejs    16.10.0
 freecdn   0.3.1
 requests
 '''
+# 写到后面发现把多线程写成class会方便很多，但是快写完了就懒得改了，，，，
 
 import re
 import sys
@@ -68,7 +69,7 @@ def download_file_return_hash(line: str, headers=headers):
     return hash256, res_url
 
 
-def write_file(bak_file, line: str, file_to_w, cdn_list=cdn_list):
+def write_file(bak_file, line: str, file_to_w, lock,cdn_list=cdn_list):
     if bak_file:  # 如果存在bak_conf文件
         line_formated = re.escape(line)  # 格式化url
         re_obj = re.compile(f'{line_formated}.*?\thash=(.*?)\n', flags=re.S)
@@ -88,38 +89,41 @@ def write_file(bak_file, line: str, file_to_w, cdn_list=cdn_list):
             file_to_w.write('\t'+cdn+res_url+'\n')  # 写入cdn列表
         file_to_w.write('\t'+'hash='+str(hash256)+'\n')  # 写入hash
 
+def main():
 
-try:
-    os.remove('./custom.bak.conf')
-except:
-    pass
-try:
-    os.rename('./custom.conf', './custom.bak.conf')
-except:
-    pass
-lock = threading.Lock()
-pool = ThreadPoolExecutor(16)
-if not os.path.exists(f'{dir_for_custom_conf}'):
-    os.makedirs(f'{dir_for_custom_conf}')
-with open('./custom.conf', 'w', encoding='utf8') as file_to_w:
-    file_to_w.write('@global\n\topen_timeout=0\n')  # 通用文件
-    bak_file = None
-    if os.path.isfile('./custom.bak.conf'):
-        # 备份文件储存上一个custom.conf的信息，如果存在hash就不下载
-        with open('./custom.bak.conf', 'r') as custom_bak_conf:
-            bak_file = custom_bak_conf.read()
-    with open('./urls.txt', 'r', encoding='utf8') as file_of_urls:
+    try:
+        os.remove('./custom.bak.conf')
+    except:
+        pass
+    try:
+        os.rename('./custom.conf', './custom.bak.conf')
+    except:
+        pass
+    lock = threading.Lock()
+    pool = ThreadPoolExecutor(16)
+    if not os.path.exists(f'{dir_for_custom_conf}'):
+        os.makedirs(f'{dir_for_custom_conf}')
+    with open('./custom.conf', 'w', encoding='utf8') as file_to_w:
+        file_to_w.write('@global\n\topen_timeout=0\n')  # 通用文件
+        bak_file = None
+        if os.path.isfile('./custom.bak.conf'):
+            # 备份文件储存上一个custom.conf的信息，如果存在hash就不下载
+            with open('./custom.bak.conf', 'r') as custom_bak_conf:
+                bak_file = custom_bak_conf.read()
+        with open('./urls.txt', 'r', encoding='utf8') as file_of_urls:
 
-        for line in file_of_urls.readlines():  # 读取需要处理的url
-            line = line.replace('\n', '')
-            # 验证是否是合法url
-            if not re.match(r'(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]', line):
-                print('非法url！如果是urls.txt文件结尾或开头的空白符请忽略这条警告。')
-                print(line)
-                continue
-            else:
+            for line in file_of_urls.readlines():  # 读取需要处理的url
+                line = line.replace('\n', '')
+                # 验证是否是合法url
+                if not re.match(r'(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]', line):
+                    print('非法url！如果是urls.txt文件结尾或开头的空白符请忽略这条警告。')
+                    print(line)
+                    continue
+                else:
 
-                pool.submit(write_file, bak_file, url_encode(line),
-                            file_to_w, cdn_list=cdn_list)
-        pool.shutdown()
-print('done!')
+                    pool.submit(write_file, bak_file, url_encode(line),
+                                file_to_w, cdn_list=cdn_list,lock=lock)
+            pool.shutdown()
+    print('done!')
+if __name__ == '__main__':
+    main()

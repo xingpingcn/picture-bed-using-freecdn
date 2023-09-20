@@ -1,2 +1,4 @@
-https://cdn.jsdelivr.net/gh/xingpingcn/website.comments/app.js
-https://cdn.jsdelivr.net/gh/xingpingcn/website.comments/style4.css
+https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/app.js
+https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/style4.css
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%8C%85%E5%9C%86%E5%BD%A2.2rx79tqffvu0.png
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/logo (2).ln5ua8psy9s.webp
