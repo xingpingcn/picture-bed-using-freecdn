@@ -33,6 +33,8 @@ https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420
 
 如果url不在`.conf`中，则判断本地是否存储`urls.txt`（`generate_pic.conf_without_urls.txt.py`无需`urls.txt`，脚本内自动处理）中的文件，如果没有则下载文件。如果有则计算hash并写入`.conf`。
 
+下载文件储存在`dir_for_custom_conf`文件夹中，生成`.conf`后可以删除，下次生成`.conf`会根据该`.bak.conf`查询。
+
 内置了几个`类cdn.jsdelivr.net`的cdn。其中jsd.cdn.zzko.cn的GitHub地址是[这里](https://github.com/54ayao/Chinajsdelivr)
 
 最终`.conf`会类似这样
@@ -56,6 +58,7 @@ https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420
     cd f:/blog
     hexo clean && hexo g
     python ./generate_custom.conf.py
+    python ./generate_pic.conf_without_urls.txt.py #如果是hexo博客
     cd f:/blog/public
     freecdn find --save
     freecdn manifest --merge ../custom.conf

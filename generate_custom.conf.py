@@ -1,6 +1,7 @@
 '''
 urllib3   1.25.11
 nodejs    16.10.0
+freecdn   0.3.1
 requests
 '''
 
@@ -12,6 +13,7 @@ import threading
 import hashlib
 import base64
 import requests
+import urllib
 cdn_list = ['https://jsd.cdn.zzko.cn/gh/', 'https://cdn.jsdelivr.us/gh/',
             'https://cdn.jsdelivr.ren/gh/', 'https://cdn.jsdelivr.net/gh/']
 
@@ -41,14 +43,14 @@ def CalcFileSha256_with_base64(filname):
         return base64.b64encode(hash_value).decode()
 
 
-def url_enconde_for_re(url: str):
-    return url.replace('(', '\(').replace(')', '\)').replace('?', '\?').replace('*', '\*').replace('.', '\.').replace('|', '\|').replace('+', '\+')
 
+def url_encode(url):
+    return urllib.parse.quote(url,safe='/()@:?.$#%')
 
 def download_file_return_hash(line: str, headers=headers):
     res_url = f'{user}/'+line.split(f'/{user}/')[-1]
     path_url = res_url.replace('/', '')
-
+    # print('start download')
     if not os.path.exists(f'{dir_for_custom_conf}/{path_url}'):  # 下载图片，用于计算hash
         r = requests.session()
         if is_use_proxy:
@@ -68,7 +70,7 @@ def download_file_return_hash(line: str, headers=headers):
 
 def write_file(bak_file, line: str, file_to_w, cdn_list=cdn_list):
     if bak_file:  # 如果存在bak_conf文件
-        line_formated = url_enconde_for_re(line)  # 格式化url
+        line_formated = re.escape(line)  # 格式化url
         re_obj = re.compile(f'{line_formated}.*?\thash=(.*?)\n', flags=re.S)
         re_res = re_obj.search(bak_file)
         if re_res:
@@ -81,6 +83,7 @@ def write_file(bak_file, line: str, file_to_w, cdn_list=cdn_list):
         hash256, res_url = download_file_return_hash(line)
     with lock:
         file_to_w.write(line+'\n')
+        
         for cdn in cdn_list:
             file_to_w.write('\t'+cdn+res_url+'\n')  # 写入cdn列表
         file_to_w.write('\t'+'hash='+str(hash256)+'\n')  # 写入hash
@@ -116,7 +119,7 @@ with open('./custom.conf', 'w', encoding='utf8') as file_to_w:
                 continue
             else:
 
-                pool.submit(write_file, bak_file, line,
+                pool.submit(write_file, bak_file, url_encode(line),
                             file_to_w, cdn_list=cdn_list)
         pool.shutdown()
 print('done!')
