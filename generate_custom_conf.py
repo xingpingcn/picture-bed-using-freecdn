@@ -142,7 +142,8 @@ def main():
             # 备份文件储存上一个custom.conf的信息，如果存在hash就不下载
             with open('./custom.bak.conf', 'r') as custom_bak_conf:
                 bak_file = custom_bak_conf.read()
-        with open('./urls.txt', 'r', encoding='utf8') as file_of_urls:
+        try:
+            file_of_urls = open('./urls.txt', 'r', encoding='utf8') 
 
             for line in file_of_urls.readlines():  # 读取需要处理的url
                 line = line.replace('\n', '')
@@ -156,7 +157,13 @@ def main():
                     pool.submit(write_file, bak_file, url_encode(line),
                                 file_to_w, cdn_list=cdn_list, lock=lock)
             pool.shutdown()
-    print('custom.conf generated.')
+            print('custom.conf generated.')
+        except FileNotFoundError as e:
+            print('warning: there exists no file named \'urls.txt\'. if you don\'t need to generate a custom.conf file from urls.txt, please ignore this warning.')
+        else:
+            file_of_urls.close()
+
+    
 
 
 if __name__ == '__main__':

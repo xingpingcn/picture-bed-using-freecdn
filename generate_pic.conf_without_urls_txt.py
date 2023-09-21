@@ -41,7 +41,7 @@ def is_vaild_url(url):
         return True
     else:
         print('非法url！如果是urls.txt文件结尾或开头的空白符请忽略这条警告。')
-        print(url)
+        print(f'url为：{url}')
         return False
 
 
