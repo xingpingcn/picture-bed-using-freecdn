@@ -33,7 +33,8 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 输出的最终`.conf`会类似这样。[示例](https://github.com/xingpingcn/picture-bed-use-freecdn/blob/main/pic.conf)
 
-<details> <summary>Title</summary>
+<details> <summary>点击查看示例</summary>
+
 ```typescript
     @global
         open_timeout=0
@@ -71,6 +72,8 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 生成的`freecdn-manifest.txt`[示例](https://github.com/xingpingcn/picture-bed-use-freecdn/blob/main/freecdn-manifest.txt)如下
 
+<details> <summary>点击查看</summary>
+
 ```typescript
     @include
         /manifest-full.txt
@@ -83,6 +86,10 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
         https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt
         hash=izgWMFIdMtd29Zy7kWt3rWohTm7WQsZ9003qUATHdFo=
 ```
+
+</details>
+
+
 
 ## 脚本运行逻辑
 
