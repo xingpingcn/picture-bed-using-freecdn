@@ -33,6 +33,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 输出的最终`.conf`会类似这样。[示例](https://github.com/xingpingcn/picture-bed-use-freecdn/blob/main/pic.conf)
 
+<details> <summary>Title</summary>
 ```typescript
     @global
         open_timeout=0
@@ -57,6 +58,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
         https://cdn.jsdelivr.net/gh/xingpingcn/website.comments/app.js
         hash=xWPhZXLUcZFkPltRZW5UXuzEnLlNlkcIx55vlu5SB7M=
 ```
+</details>
 <font color=#808080 >*注：脚本会自动urlencode，将不是url元字符的字符转义以兼容freecdn-js。脚本会生成`.bak.conf`，可以删除。*</font>
 
 或者你也用hexo博客（如果你也使用hexo博客，需要把三个`.py`文件放在博客根目录），那么可以使用`generate_pic.conf_without_urls_txt.py`根据`.md`（博客写作使用markdown）文件直接生成`pic.conf`（作用和`custom.conf`一样，可以用`--merge`合并到`freecdn-manifest.txt`），无需手动把url添加到`urls.txt`。`.md`放在`source\_posts`，或根据需要自行修改。`.py`文件中的正则表达需要根据自己的需求更改。如果你也使用[hexo-volantis](https://github.com/volantis-x/community)可以试着直接运行。脚本匹配了`![img](url)`、`{%link%}`、`{%image%}`、`headimg`四个`tag`。
