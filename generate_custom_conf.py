@@ -16,15 +16,14 @@ import base64
 import requests
 import urllib
 cdn_list = ['https://jsd.cdn.zzko.cn/gh/', 'https://cdn.jsdelivr.us/gh/',
-            'https://cdn.jsdelivr.ren/gh/', 'https://cdn.jsdelivr.net/gh/']
+            'https://cdn.jsdelivr.ren/gh/', 'https://cdn.jsdelivr.net/gh/', 'https://raw.githubusercontent.com/']
 
 os.chdir(sys.path[0])  # os.chdir(sys.path[0])把当前py文件所在路径设置为当前运行路径.
 
 is_use_proxy = True
 proxies_dict = {'http': 'socks5://127.0.0.1:10808',
                         'https': 'socks5://127.0.0.1:10808'}
-user = 'xingpingcn'
-dir_for_custom_conf = 'dir_for_custom_conf' #储存文件的文件夹名称
+dir_for_custom_conf = 'dir_for_custom_conf'  # 储存文件的文件夹名称
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -44,12 +43,35 @@ def CalcFileSha256_with_base64(filname):
         return base64.b64encode(hash_value).decode()
 
 
-
 def url_encode(url):
-    return urllib.parse.quote(url,safe='/()@:?.$#%')
+    return urllib.parse.quote(url, safe='/()@:?.$#%')
+
+
+def url_split(url: str):
+    '''
+    分离url
+    xxx/gh/user/aaa or xxx/user/aaa -> user/aaa
+    xxx/gh/aaa -> aaa 
+    param url 为url encode后的url
+    return user/aaa or aaa 
+    '''
+    re_obj = re.compile(
+        f'http.*?(?:(?<=/gh/)|(?=raw.githubusercontent.com/))(.*)\s*')
+    res = re_obj.search(url)
+    if res:
+        if not 'raw.githubusercontent.com' in res.group(1):
+            return res.group(1)
+        else:
+            res = res.group(1).replace('raw.githubusercontent.com/', '')
+            re_res = re.search(r'.*?/.*?/(.*?)/.*', res).group(1)
+            res = res.replace(f'/{re_res}', f'@{re_res}')
+            return res
+    else:
+        print(f'unsupported url\n({url})')
+
 
 def download_file_return_hash(line: str, headers=headers):
-    res_url = f'{user}/'+line.split(f'/{user}/')[-1]
+    res_url = url_split(line)  # 定位文件的url
     path_url = res_url.replace('/', '')
     # print('start download')
     if not os.path.exists(f'{dir_for_custom_conf}/{path_url}'):  # 下载图片，用于计算hash
@@ -65,11 +87,12 @@ def download_file_return_hash(line: str, headers=headers):
         else:
             print(
                 f"\033[5;30;45mdownload one of the pictures failed\n{line}\033[0m")
-    hash256 = CalcFileSha256_with_base64(f'{dir_for_custom_conf}/{path_url}')  # 计算hash
+    hash256 = CalcFileSha256_with_base64(
+        f'{dir_for_custom_conf}/{path_url}')  # 计算hash
     return hash256, res_url
 
 
-def write_file(bak_file, line: str, file_to_w, lock,cdn_list=cdn_list):
+def write_file(bak_file, line: str, file_to_w, lock, cdn_list=cdn_list):
     if bak_file:  # 如果存在bak_conf文件
         line_formated = re.escape(line)  # 格式化url
         re_obj = re.compile(f'{line_formated}.*?\thash=(.*?)\n', flags=re.S)
@@ -77,17 +100,26 @@ def write_file(bak_file, line: str, file_to_w, lock,cdn_list=cdn_list):
         if re_res:
             # 如果在custom.bak.conf文件中存在url和hash，那么就不下载。
             hash256 = re_res.group(1)
-            res_url = f'{user}/'+line.split(f'/{user}/')[-1]
+            res_url = url_split(line)  # 定位文件的url
         else:
             hash256, res_url = download_file_return_hash(line)
     else:
         hash256, res_url = download_file_return_hash(line)
     with lock:
-        file_to_w.write(line+'\n')
-        
+        file_to_w.write('\n'+line)
+
         for cdn in cdn_list:
-            file_to_w.write('\t'+cdn+res_url+'\n')  # 写入cdn列表
-        file_to_w.write('\t'+'hash='+str(hash256)+'\n')  # 写入hash
+            if not cdn == 'https://raw.githubusercontent.com/':
+                file_to_w.write(f'\n\t{cdn}{res_url}')
+            else:
+                try:
+                    res_url2 = re.search(r'@(.*?)/', f'{res_url}').group(1)
+                    res_url = res_url.replace(f'@{res_url2}', f'/{res_url2}')
+                    file_to_w.write(f'\n\t{cdn}{res_url}')
+                except:
+                    pass
+        file_to_w.write('\n\t'+'hash='+str(hash256))  # 写入hash
+
 
 def main():
 
@@ -122,8 +154,10 @@ def main():
                 else:
 
                     pool.submit(write_file, bak_file, url_encode(line),
-                                file_to_w, cdn_list=cdn_list,lock=lock)
+                                file_to_w, cdn_list=cdn_list, lock=lock)
             pool.shutdown()
-    print('done!')
+    print('custom.conf generated.')
+
+
 if __name__ == '__main__':
     main()
