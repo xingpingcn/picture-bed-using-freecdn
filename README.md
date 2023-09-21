@@ -69,7 +69,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 生成的`freecdn-manifest.txt`[示例](https://github.com/xingpingcn/picture-bed-use-freecdn/blob/main/freecdn-manifest.txt)如下
 
-```python
+```typescript
     @include
         /manifest-full.txt
     @global
