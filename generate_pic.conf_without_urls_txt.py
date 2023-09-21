@@ -33,7 +33,7 @@ headers = {
 }
 
 
-def is_vaild_url(url):
+def is_vaild_url(url,re_obj = None):
     '''
     判断是否合法url
     '''
@@ -41,16 +41,16 @@ def is_vaild_url(url):
         return True
     else:
         print('非法url！如果是urls.txt文件结尾或开头的空白符请忽略这条警告。')
-        print(f'url为：{url}')
+        print(f'url为：{url}, {re_obj}')
         return False
 
 
-def get_urls_in_md_file_and_generate(md_file: str, re_obj_list, bak_file, url_list, pool_for_write_file, threading_list, file_to_w, lock):
+def get_urls_in_md_file_and_generate(md_file: str, re_obj_list:list, bak_file, url_list, pool_for_write_file, threading_list, file_to_w, lock):
     for re_obj in re_obj_list:
         re_res_link_tag = re_obj.findall(md_file)  # 读取文件中的url
         for res_url in re_res_link_tag:
             res_url = res_url.replace('\n', '')
-            if is_vaild_url(res_url) and res_url not in url_list:
+            if is_vaild_url(res_url, re_obj) and res_url not in url_list:
                 res_url = url_encode(res_url)
                 with lock:
                     url_list.append(res_url)
