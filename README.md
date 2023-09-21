@@ -1,5 +1,11 @@
 # picture-bed-use-freecdn
 
+```yaml
+urllib3: 1.25.11
+nodejs:  16.10.0
+freecdn: 0.3.1
+```
+
 freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启用另一个链接。博客图床使用到的cdn.jsdelivr.net不太稳定需要备用链接，所以用到了freecdn-js。但是freecdn-js对本身就在服务器端的文件不太友好（因为需要`sha256`），例如我把github作为图床而上传的图片（图片不在本地），故写了一个python脚本处理hash和生成freecdn-js所需要的配置文件。
 
 需要使用安装[freecdn-js](https://github.com/EtherDream/freecdn)。本脚本为python脚本（因为不会写gulp），需要安装python。若报错或许需要1.25.11版本的`urllib3`。
