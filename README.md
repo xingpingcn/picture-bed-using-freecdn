@@ -1,5 +1,6 @@
 # picture-bed-use-freecdn
 
+需要环境
 ```yaml
 urllib3: 1.25.11
 nodejs:  16.10.0
