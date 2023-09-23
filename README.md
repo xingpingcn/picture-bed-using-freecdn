@@ -61,6 +61,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
         https://cdn.jsdelivr.net/gh/xingpingcn/website.comments/app.js
         hash=xWPhZXLUcZFkPltRZW5UXuzEnLlNlkcIx55vlu5SB7M=
 ```
+
 </details>
 
 <font color=#808080 >*注：脚本会自动urlencode，将不是url元字符的字符转义以兼容freecdn-js。脚本会生成`.bak.conf`，可以删除。*</font>
