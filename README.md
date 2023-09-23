@@ -1,4 +1,6 @@
-# picture-bed-use-freecdn
+<h1 align="center" style="font-weight: bold" > picture-bed-using-freecdn </h1>
+
+---
 
 需要环境
 ```yaml
@@ -31,7 +33,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 <font color=#808080 >*注：脚本未支持其他url格式和生成其他图床url。*</font>
 
-输出的最终`.conf`会类似这样。[示例](https://github.com/xingpingcn/picture-bed-use-freecdn/blob/main/pic.conf)
+输出的最终`.conf`会类似这样。[示例](https://github.com/xingpingcn/picture-bed-using-freecdn/blob/main/pic.conf)
 
 <details> <summary>点击查看示例</summary>
 
@@ -70,7 +72,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 `generate_external_manifest_file.py`用于生成`freecdn-manifest.txt`，`.txt`储存用于加速`manifest-full.txt`的cdn链接。详见[这里](https://github.com/EtherDream/freecdn/tree/master/examples/ext-manifest)
 
-生成的`freecdn-manifest.txt`[示例](https://github.com/xingpingcn/picture-bed-use-freecdn/blob/main/freecdn-manifest.txt)如下
+生成的`freecdn-manifest.txt`[示例](https://github.com/xingpingcn/picture-bed-using-freecdn/blob/main/freecdn-manifest.txt)如下
 
 <details> <summary>点击查看</summary>
 
@@ -135,3 +137,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
     freecdn js --make --cdn "https://jsd.cdn.zzko.cn/gh/user/repo@main/freecdn-internal/ver/freecdn-main.min.js unpkg jsdelivr elemecdn " #此命令为配置cdn链接用于加速.min.js文件，详细请查看freecdn项目的GitHub
     gulp && hexo d
 ```
+
+## 感谢
+
+* [EtherDream/freecdn](https://github.com/EtherDream/freecdn)
