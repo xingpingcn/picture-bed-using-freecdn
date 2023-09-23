@@ -31,7 +31,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
  > https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.7grs1emx5ok0.png
  > https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/app.js
 
-<font color=#808080 >*注：脚本未支持其他url格式和生成其他图床url。*</font>
+<font color=#808080>*注：脚本未支持其他url格式和生成其他图床url。*</font>
 
 输出的最终`.conf`会类似这样。[示例](https://github.com/xingpingcn/picture-bed-using-freecdn/blob/main/pic.conf)
 
