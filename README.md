@@ -72,7 +72,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 在`.py`文件头部可以设置是否使用代理（v2ray代理，默认开启），需要自行设置。
 
-`generate_external_manifest_file.py`用于生成`freecdn-manifest.txt`，`.txt`储存用于加速`manifest-full.txt`的cdn链接。详见[这里](https://github.com/EtherDream/freecdn/tree/master/examples/ext-manifest)
+`generate_external_manifest_file.py`用于生成`freecdn-manifest.txt`，`.txt`储存用于加速`manifest-full.txt`的cdn链接。详见[EtherDream/freecdn](https://github.com/EtherDream/freecdn/tree/master/examples/ext-manifest)
 
 > P.S. cdn有缓存，如果freecdn失效请检查`freecdn-manifest.txt`或`manifest-full.txt`是否和对应原文件一致。
 
