@@ -76,6 +76,8 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 > P.S. cdn有缓存，如果freecdn失效请检查`freecdn-manifest.txt`或`manifest-full.txt`是否和对应原文件一致。
 
+在上传hexo博客后使用`refresh_cdn_cache.py`进行刷新。
+
 生成的`freecdn-manifest.txt`[示例](https://github.com/xingpingcn/picture-bed-using-freecdn/blob/main/freecdn-manifest.txt)如下
 
 <details> <summary>点击查看</summary>
@@ -140,6 +142,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
     python ../generate_external_manifest_file.py 
     freecdn js --make --cdn "https://jsd.cdn.zzko.cn/gh/user/repo@main/freecdn-internal/ver/freecdn-main.min.js unpkg jsdelivr elemecdn " #此命令为配置cdn链接用于加速.min.js文件，详细请查看freecdn项目的GitHub
     gulp && hexo d
+    python ../refresh_cdn_cache.py
 ```
 
 ## 感谢
