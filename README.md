@@ -70,9 +70,11 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 如果你像我一样把文件（图片和某些js）放在github（我使用[picx.xpoet.cn](https://picx.xpoet.cn/)作为管理工具，上传图片的同时能够自动生成cdn链接），能十分方便生成cdn链接。
 
-在`.py`文件头部可以设置是否使用代理（v2ray），需要自行设置。
+在`.py`文件头部可以设置是否使用代理（v2ray代理，默认开启），需要自行设置。
 
 `generate_external_manifest_file.py`用于生成`freecdn-manifest.txt`，`.txt`储存用于加速`manifest-full.txt`的cdn链接。详见[这里](https://github.com/EtherDream/freecdn/tree/master/examples/ext-manifest)
+
+> P.S. cdn有缓存，如果freecdn失效请检查`freecdn-manifest.txt`或`manifest-full.txt`是否和对应原文件一致。
 
 生成的`freecdn-manifest.txt`[示例](https://github.com/xingpingcn/picture-bed-using-freecdn/blob/main/freecdn-manifest.txt)如下
 
