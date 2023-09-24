@@ -78,6 +78,8 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 在上传hexo博客后使用`refresh_cdn_cache.py`进行刷新。
 
+> P.S. `jsd.cdn.zzko.cn`缓存时间长，而且没有刷新缓存的方法，若出现网页加载失败的情况请不要使用`refresh_cdn_cache.py`，这是因为`jsd.cdn.zzko.cn`的加载速度最快，但是加载的文件不是最新版本，因而hash对不上网页就加载失败。
+
 生成的`freecdn-manifest.txt`[示例](https://github.com/xingpingcn/picture-bed-using-freecdn/blob/main/freecdn-manifest.txt)如下
 
 <details> <summary>点击查看</summary>
