@@ -1,0 +1,11 @@
+@include
+	/manifest-full.txt
+@global
+	open_timeout=0
+/manifest-full.txt
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt
+	https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt
+	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt
+	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt
+	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/manifest-full.txt
+	hash=9pxshT/AQWdQCCjEiqJPKWj6pNxWhrUj5u3BazDbHpE=

@@ -3,6 +3,7 @@
 ---
 
 需要环境
+
 ```yaml
 urllib3: 1.25.11
 nodejs:  16.10.0
@@ -15,10 +16,9 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 经过验证，nodejs16.10.0能运行freecdn-js，如果有安装旧版本nodejs的需要请使用nvm工具安装。
 
-
 ## 使用方法
 
-只需要把放在github的图片的url（以.xxx结尾，如.png、.css、.js）放在`urls.txt`，每行放一个url，并在同一个文件夹内运行`generate_custom_conf.py`，即可生成`custom.conf`（可以用`freecdn manifest --merge path_to_custom.conf`合并到`freecdn-manifest.txt`），`custom.conf`由几个内置的cdn模板生成。
+只需要把放在github的图片的url（以.xxx结尾，如.png、.css、.js）放在`urls.txt`，每行放一个url，并在同一个文件夹内运行`import_to_db_with_urls_txt.py`，即可生成`custom.conf`（可以用`freecdn manifest --merge $path_to_custom.conf`合并到`freecdn-manifest.txt`），`custom.conf`由几个内置的cdn模板生成。
 
 `url`的格式为`http(s)://cdn/user/repo@your_branch/xxx`。其中`cdn`可以是`cdn.jsdelivr.net/gh/`这种免费cdn。
 
@@ -26,16 +26,16 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 `url`也可以不带有`your_branch`，或许不能生成`raw.githubusercontent.com`的cdn链接，但是能生成`类cdn.jsdelivr.net/gh/`的cdn链接。可以看到下面`.conf`的示例中最后一个`url`只生成了4个cdn链接。
 
-<font color=#808080>*注：若要成功生成`raw.githubusercontent.com`请确保原始url中在`@your_branch`以外不存在`@`*</font>
+<font color=#808080>*注：若要成功生成`raw.githubusercontent.com`请确保原始url中在`@your_branch`之前不存在`@`*</font>
 
 示例
- > https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/logo (2).ln5ua8psy9s.webp
- > https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.7grs1emx5ok0.png
- > https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/app.js
+ > <https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/logo> (2).ln5ua8psy9s.webp
+ > <https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.7grs1emx5ok0.png>
+ > <https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/app.js>
 
 <font color=#808080>*注：脚本未支持其他url格式和生成其他图床url。*</font>
 
-输出的最终`.conf`会类似这样。[示例](https://github.com/xingpingcn/picture-bed-using-freecdn/blob/main/pic.conf)
+输出的最终`.conf`会类似这样[[示例]](https://github.com/xingpingcn/picture-bed-using-freecdn/blob/main/pic.conf)
 
 <details> <summary>点击查看示例</summary>
 
@@ -66,9 +66,9 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 </details>
 
-<font color=#808080 >*注：脚本会自动urlencode，将不是url元字符的字符转义以兼容freecdn-js。脚本会生成`.bak.conf`，可以删除。*</font>
+<font color=#808080 >*注：脚本会自动urlencode，将不是url元字符的字符转义以兼容freecdn-js。*</font>
 
-或者你也用hexo博客（如果你也使用hexo博客，需要把三个`.py`文件放在博客根目录），那么可以使用`generate_pic.conf_without_urls_txt.py`根据`.md`（博客写作使用markdown）文件直接生成`pic.conf`（作用和`custom.conf`一样，可以用`--merge`合并到`freecdn-manifest.txt`），无需手动把url添加到`urls.txt`。`.md`放在`source\_posts`，或根据需要自行修改。`.py`文件中的正则表达需要根据自己的需求更改。如果你也使用[hexo-volantis](https://github.com/volantis-x/community)可以试着直接运行。脚本匹配了`![img](url)`、`{%link%}`、`{%image%}`、`headimg`四个`tag`。
+或者你也用hexo博客（如果你也使用hexo博客，需要把四个`.py`文件放在博客根目录），那么可以使用`import_to_db_with_hexo_blog.py`根据`.md`（博客写作使用markdown）文件的内容直接生成`pic.conf`（作用和`custom.conf`一样，可以用`--merge`合并到`freecdn-manifest.txt`），无需手动把url添加到`urls.txt`。`.md`放在`source\_posts`，或根据需要自行修改。`.py`文件中的正则表达需要根据自己的需求更改。如果你也使用[hexo-volantis](https://github.com/volantis-x/community)可以试着直接运行。脚本适配了`![img](url)`、`{%link%}`、`{%image%}`、`headimg`四个`tag`。
 
 如果你像我一样把文件（图片和某些js）放在github（我使用[picx.xpoet.cn](https://picx.xpoet.cn/)作为管理工具，上传图片的同时能够自动生成cdn链接），能十分方便生成cdn链接。
 
@@ -101,18 +101,15 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 </details>
 
-
-
 ## 脚本运行逻辑
 
-脚本会先判断`urls.txt`（或`.md`文件）中的url是否在`custom.conf`（或`pic.conf`）中，如果已经存在则直接写入到新的`.conf`，从而节省流量和时间。
+脚本会先判断`urls.txt`（或`.md`文件）中的url是否在数据库中（`freecdn`使用`sqlite3`，位置在`~/.freecdn/custom.db`，详见[freecdn db](https://github.com/EtherDream/freecdn/tree/master/docs/cli#import)；同时`python`也内置对应的库）中，如果已经存在则直接写入到新的`.conf`，从而节省流量和时间。
 
-如果url不在`.conf`中，则判断本地是否存储`urls.txt`（`generate_pic.conf_without_urls_txt.py`无需`urls.txt`，脚本内自动处理）中的文件，如果没有则下载文件。如果有则计算hash并写入`.conf`。
+如果url不在数据库中，则判断本地是否存储了`urls.txt`或`.md`（`import_to_db_with_hexo_blog.py`无需`urls.txt`，脚本内自动处理）中的文件，如果没有则下载文件。如果有则计算`hash`并写入`.conf`（或`pic.conf`）。
 
-下载文件储存在`dir_for_custom_conf`文件夹中，在生成`.conf`后可以删除，下次生成`.conf`会根据`.bak.conf`查询。
+下载文件储存在同目录的`dir_for_custom_conf`文件夹中，可以在`.py`文件头部修改位置。
 
 内置了几个`类cdn.jsdelivr.net`的cdn。其中jsd.cdn.zzko.cn的GitHub地址是[这里](https://github.com/54ayao/Chinajsdelivr)
-
 
 ## 和hexo配合使用
 
@@ -121,8 +118,8 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 ```powershell
     cd f:/blog
     hexo clean && hexo g
-    python ./generate_custom_conf.py
-    python ./generate_pic.conf_without_urls_txt.py #如果是hexo博客
+    python ./import_to_db_with_urls_txt.py
+    python ./import_to_db_with_hexo_blog.py #如果是hexo博客
     cd f:/blog/public
     freecdn find --save
     freecdn manifest --merge ../custom.conf
@@ -137,8 +134,8 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
     f:
     cd f:/blog
     hexo clean && hexo g
-    python ./generate_custom_conf.py
-    python ./generate_pic.conf_without_urls_txt.py #如果是hexo博客
+    python ./import_to_db_with_urls_txt.py
+    python ./import_to_db_with_hexo_blog.py #如果是hexo博客
     cd f:/blog/public
     freecdn find --save
     freecdn manifest --merge ../custom.conf
