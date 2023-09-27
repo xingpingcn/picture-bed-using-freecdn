@@ -10,11 +10,11 @@ nodejs:  16.10.0
 freecdn: 0.3.1
 ```
 
-freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启用另一个链接。博客图床使用到的cdn.jsdelivr.net不太稳定需要备用链接，所以用到了freecdn-js。但是freecdn-js对本身就在服务器端的文件不太友好（因为需要`sha256`），例如我把github作为图床而上传的图片（图片不在本地），故写了一个python脚本处理hash和生成freecdn-js所需要的配置文件。
+freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启用另一个链接。博客图床使用到的cdn.jsdelivr.net不太稳定需要备用链接，所以用到了freecdn-js。但是freecdn-js对本身就在服务器端的文件不太友好（因为需要`sha256`），例如我把github作为图床而上传的图片（图片不在本地），故写了一个`python`脚本处理hash和生成freecdn-js所需要的配置文件。
 
-需要使用安装[freecdn-js](https://github.com/EtherDream/freecdn)。本脚本为python脚本（因为不会写gulp），需要安装python。若报错或许需要1.25.11版本的`urllib3`。
+需要使用安装[freecdn-js](https://github.com/EtherDream/freecdn)。本脚本为`python`脚本（因为不会写gulp），需要安装`python`。若报错或许需要1.25.11版本的`urllib3`。
 
-经过验证，nodejs16.10.0能运行freecdn-js，如果有安装旧版本nodejs的需要请使用nvm工具安装。
+经过验证，`nodejs16.10.0`能运行freecdn-js，如果有安装旧版本nodejs的需要请使用nvm工具安装。
 
 ## 使用方法
 
@@ -103,7 +103,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 ## 脚本运行逻辑
 
-脚本会先判断`urls.txt`（或`.md`文件）中的url是否在数据库中（`freecdn`使用`sqlite3`，位置在`~/.freecdn/custom.db`，详见[freecdn db](https://github.com/EtherDream/freecdn/tree/master/docs/cli#import)；同时`python`也内置对应的库）中，如果已经存在则直接写入到新的`.conf`，从而节省流量和时间。
+脚本会先判断`urls.txt`（或`.md`文件）中的url是否在数据库中（`freecdn`使用`sqlite3`，位置在`~/.freecdn/custom.db`，详见[freecdn db](https://github.com/EtherDream/freecdn/tree/master/docs/cli#import)；同时`python`也内置对应的库；不建议使用freecdn自带的`db`命令写入和读取数据库，运行速度非常低）中，如果已经存在则直接写入到新的`.conf`，从而节省流量和时间。
 
 如果url不在数据库中，则判断本地是否存储了`urls.txt`或`.md`（`import_to_db_with_hexo_blog.py`无需`urls.txt`，脚本内自动处理）中的文件，如果没有则下载文件。如果有则计算`hash`并写入`.conf`（或`pic.conf`）。
 

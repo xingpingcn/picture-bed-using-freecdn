@@ -31,6 +31,8 @@ headers = {
 
 class main():
     def __init__(self, name_of_conf_to_write) -> None:
+        if not os.path.exists(f'{dir_for_custom_conf}'):
+            os.makedirs(f'{dir_for_custom_conf}')
         self.name_of_conf_to_writ = name_of_conf_to_write
         self.pool = ThreadPoolExecutor(32)
         self.lock = threading.Lock()
