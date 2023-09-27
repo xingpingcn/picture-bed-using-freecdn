@@ -145,6 +145,9 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
     gulp && hexo d
     python ../refresh_cdn_cache.py
 ```
+## 后记
+
+可以的话记得备份`~/.freecdn/custom.db`。
 
 ## 感谢
 
