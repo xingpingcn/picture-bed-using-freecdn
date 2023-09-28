@@ -82,7 +82,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 `generate_external_manifest_file.py`中的`is_refresh_tag`为 `True`时能刷新博客的release`tag`从而达到即时更新cdn缓存的目的（仅刷新`freecdn-manifest.txt`中加速`manifest-full.txt`的cdn）。需要填写`user`、`token`等信息。
 
-<font color=#808080 >*注：若在没有更新repo资源的时候重复刷新tag可能会生成多个`draft` release*</font>
+<font color=#808080 >*注：若在没有更新repo资源的时候重复刷新tag可能会生成多个`draft` release；使用该.py文件需要上传两次博客，见[和hexo配合使用](#和hexo配合使用)的第二个示例*</font>
 
 > Github账户中添加Token:
 >1. Github任意页面中，依次点击：右上角头像 -> Settings -> Developer Settings -> Personal access tokens
@@ -159,9 +159,10 @@ https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@tag/manifest-full.txt
     freecdn find --save
     freecdn manifest --merge ../custom.conf
     freecdn manifest --merge ../pic.conf -o manifest-full.txt #用于生成外置的freecdn-manifest.txt
-    python ../generate_external_manifest_file.py 
     freecdn js --make --cdn "https://jsd.cdn.zzko.cn/gh/user/repo@main/freecdn-internal/ver/freecdn-main.min.js unpkg jsdelivr elemecdn " #此命令为配置cdn链接用于加速.min.js文件，详细请查看freecdn项目的GitHub
     gulp && hexo d
+    python ../generate_external_manifest_file.py 
+    hexo d #如果“is_refresh_tag”为 “True”需要上传两次
     python ../refresh_cdn_cache.py
 ```
 ## 后记
