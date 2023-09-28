@@ -16,8 +16,11 @@ is_output_to_txt = False
 os.chdir(sys.path[0])  # os.chdir(sys.path[0])把当前py文件所在路径设置为当前运行路径.
 
 is_use_proxy = True
-proxies_dict = {'http': 'socks5://127.0.0.1:10808',
+if is_use_proxy:    
+    proxies_dict = {'http': 'socks5://127.0.0.1:10808',
                         'https': 'socks5://127.0.0.1:10808'}
+else:
+    proxies_dict ={}
 dir_for_custom_conf = 'dir_for_custom_conf'  # 储存文件的文件夹名称
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',

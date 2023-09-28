@@ -1,10 +1,91 @@
 import os
-import sys,base64,hashlib
-from import_to_db_with_urls_txt import cdn_list
+import sys,base64,hashlib,requests
+from import_to_db_with_urls_txt import cdn_list,proxies_dict
 
 '''
-从freecdn-manifest.txt中生成manifest-full.txt和用于引入外部manifest的freecdn-manifest.txt
+从freecdn-manifest.txt中生成manifest-full.txt和用于引入外部manifest的freecdn-manifest.txt。需要填写user、token等信息。
+
+is_refresh_tag = True 会刷新tag，此tag用于即时更新cdn缓存（间接）。需要填写user、token（personal access token）等信息。
 '''
+
+user = ''
+repo = ''
+branch = ''
+
+is_refresh_tag = True
+
+token = ''
+
+headers = {
+   "Accept" : "application/vnd.github+json",
+   "Authorization": f"Bearer {token}",
+   "X-GitHub-Api-Version": "2022-11-28"
+}
+
+def try_func(func):
+   def wrapper():
+         try:
+            return func()
+         except Exception :
+            print('[error] check your network or uesr and repo')
+            raise
+   return wrapper
+@try_func
+def get_release_id():
+
+   r = requests.get(f'https://api.github.com/repos/{user}/{repo}/releases/latest',headers=headers,proxies=proxies_dict)
+   json = r.json()
+   if r.status_code == 200:
+      id = json["id"]
+      print(f'[info] latest release id: {id}.')
+      return id
+   else:
+      if json["message"] == "Not Found":
+         print("[warning] status_code: "+str(r.status_code))
+         print('[info] would get 404 status_code if there were no release. or check your network.')
+         return None
+@try_func
+def get_branch_sha():
+  
+   r = requests.get(f'https://api.github.com/repos/{user}/{repo}/branches/{branch}',headers=headers,proxies=proxies_dict)
+   json = r.json()
+   return json['commit']['sha'][0:10]
+
+# 取当前head commit的sha-id的前10位作为tag和release的名称
+branch_sha = get_branch_sha()
+data_of_new_release= {
+   "tag_name":f"{branch_sha}",
+   "target_commitish":f"{branch}",
+   "name":f"{branch_sha}",
+   "body":"update blog",
+   "draft": False
+}
+def post_new_release():
+   release_id = get_release_id()
+   if not release_id == None:
+        #delete release
+        r1 = requests.delete(f'https://api.github.com/repos/{user}/{repo}/releases/{release_id}',headers=headers,proxies=proxies_dict)
+        if r1.status_code == 204 :
+            print('[success] old release deleted.')
+        else:
+            print('[error] '+r1.content)
+        r2 = requests.delete(f'https://api.github.com/repos/{user}/{repo}/git/refs/tags/{branch_sha}',headers=headers,proxies=proxies_dict)
+        if r1.status_code == 204 :
+            print('[success] old tag deleted.')
+        else:
+            print('[error] '+r2.content)
+   #create a new one
+   r = requests.post(f'https://api.github.com/repos/{user}/{repo}/releases',headers=headers,json=data_of_new_release,proxies=proxies_dict)
+   if r.status_code == 201:
+      print('[success] new release created.')
+   elif r.status_code == 404:
+      print('[error] Not Found if the discussion category name is invalid.')
+      print(r.json())
+   elif r.status_code == 422:
+      print('[error] Validation failed, or the endpoint has been spammed.')
+      print(r.json())
+   else:
+      print('[error] status_code: '+str(r.status_code)+'. when post a new release.')
 def CalcFileSha256_with_base64(filname):
     ''' calculate file sha256 '''
     with open(filname, "rb") as f:
@@ -19,13 +100,17 @@ def main():
         hash256 = CalcFileSha256_with_base64(
             os.path.join('./public', 'manifest-full.txt'))
         f.write('@include\n\t/manifest-full.txt\n@global\n\topen_timeout=0\n/manifest-full.txt')
+        if is_refresh_tag:
+            post_new_release()
         for cdn in cdn_list:
             if  not cdn  == 'https://raw.githubusercontent.com/':
-                f.write(f'\n\t{cdn}xingpingcn/xingpingcn.github.io@main/manifest-full.txt')
+                if is_refresh_tag:
+                    f.write(f'\n\t{cdn}{user}/{repo}@{branch_sha}/manifest-full.txt')
+                else:
+                   f.write(f'\n\t{cdn}{user}/{repo}@{branch}/manifest-full.txt')
             else:
-                f.write(f'\n\t{cdn}xingpingcn/xingpingcn.github.io/main/manifest-full.txt')
-        # f.write(f'''@include\n\t/manifest-full.txt\n@global\n\topen_timeout=0\n/manifest-full.txt\n\thttps://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt\n\thttps://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt\n\thttps://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt\n\thttps://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt\n\thash={hash256}''')
+                f.write(f'\n\t{cdn}{user}/{repo}/{branch}/manifest-full.txt')
         f.write(f'\n\thash={hash256}')
-    print('manifest_file generaeted.')
+    print('[success] manifest_file generaeted.')
 if __name__ == '__main__':
     main()

@@ -74,13 +74,25 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 在`.py`文件头部可以设置是否使用代理（v2ray代理，默认开启），需要自行设置。
 
-`generate_external_manifest_file.py`用于生成`freecdn-manifest.txt`，`.txt`储存用于加速`manifest-full.txt`的cdn链接。详见[EtherDream/freecdn](https://github.com/EtherDream/freecdn/tree/master/examples/ext-manifest)
+在上传hexo博客后使用`refresh_cdn_cache.py`进行刷新。通过访问`purge.jsdelivr.net/resource`来刷新`cdn.jsdelivr.net/resource`缓存。
 
-> P.S. cdn有缓存，如果freecdn失效请检查`freecdn-manifest.txt`或`manifest-full.txt`是否和对应原文件一致。
+> P.S. 官方进行了限制，需要用邮箱申请权限才能生效，比较麻烦（可以设置`generate_external_manifest_file.py`中的`is_refresh_tag`为 `True`，这样可以刷新博客的release`tag`从而达到即时更新cdn缓存。
 
-在上传hexo博客后使用`refresh_cdn_cache.py`进行刷新。
+`generate_external_manifest_file.py`用于生成`freecdn-manifest.txt`，`.txt`储存用于加速`manifest-full.txt`的cdn链接。需要在文件中填写`user`、`repo`等信息。
 
-> P.S. `jsd.cdn.zzko.cn`缓存时间长，而且没有刷新缓存的方法，若出现网页加载失败的情况请不要使用`refresh_cdn_cache.py`，这是因为`jsd.cdn.zzko.cn`的加载速度最快，但是加载的文件不是最新版本，因而hash对不上网页就加载失败。
+`generate_external_manifest_file.py`中的`is_refresh_tag`为 `True`时能刷新博客的release`tag`从而达到即时更新cdn缓存的目的。需要填写`user`、`token`等信息。
+
+<font color=#808080 >*注：若在没有更新repo资源的时候重复刷新tag可能会生成多个`draft` release*</font>
+
+> Github账户中添加Token:
+>1. Github任意页面中，依次点击：右上角头像 -> Settings -> Developer Settings -> Personal access tokens
+>1. 点击Generate new token
+>1. Notes中随便输入个名字，Select scopes中，确保repo及其子项目全部选中，然后点击Generate Token
+>1. 把产生的token，一个40位的16进制字符串记住。重要：此token只显示这一次，如果没记住只能删除重建
+
+外部`manifest`详见[EtherDream/freecdn](https://github.com/EtherDream/freecdn/tree/master/examples/ext-manifest)
+
+> P.S. cdn有缓存，如果freecdn失效请通过访问cdn的`freecdn-manifest.txt`或`manifest-full.txt`来检验是否和在`repo`中对应原文件一致。
 
 生成的`freecdn-manifest.txt`[示例](https://github.com/xingpingcn/picture-bed-using-freecdn/blob/main/freecdn-manifest.txt)如下
 
@@ -96,6 +108,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
         https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt
         https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt
         https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt
+        https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/manifest-full.txt
         hash=izgWMFIdMtd29Zy7kWt3rWohTm7WQsZ9003qUATHdFo=
 ```
 
@@ -110,6 +123,12 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 下载文件储存在同目录的`dir_for_custom_conf`文件夹中，可以在`.py`文件头部修改位置。
 
 内置了几个`类cdn.jsdelivr.net`的cdn。其中jsd.cdn.zzko.cn的GitHub地址是[这里](https://github.com/54ayao/Chinajsdelivr)
+
+`generate_external_manifest_file.py`中的`is_refresh_tag`为 `True`时，会查询当前的branch是否有release `tag`，如果没有则创建一个新的`tag`（[github API: create-a-release](https://docs.github.com/zh/rest/releases/releases?apiVersion=2022-11-28#create-a-release)），这个`tag`由当前head_commit的`sha_id`的前10位组成。如果有则删除，然后创建一个新的`tag`，freecdn-manifest.txt中的url替换成以下样式：
+
+```
+https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@tag/manifest-full.txt
+```
 
 ## 和hexo配合使用
 
