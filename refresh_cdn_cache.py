@@ -1,6 +1,6 @@
 import requests,re
 import os
-from import_to_db_with_urls_txt import proxies_dict
+from config import *
 from concurrent.futures import ThreadPoolExecutor, wait
 import threading
 def main():

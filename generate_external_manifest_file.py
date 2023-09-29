@@ -1,6 +1,7 @@
 import os
 import sys,base64,hashlib,requests
-from import_to_db_with_urls_txt import cdn_list,proxies_dict
+
+from config import *
 
 '''
 从freecdn-manifest.txt中生成manifest-full.txt和用于引入外部manifest的freecdn-manifest.txt。需要填写user、token等信息。
@@ -8,13 +9,7 @@ from import_to_db_with_urls_txt import cdn_list,proxies_dict
 is_refresh_tag = True 会刷新tag，此tag用于即时更新cdn缓存（间接）。需要填写user、token（personal access token）等信息。
 '''
 
-user = ''
-repo = ''
-branch = ''
 
-is_refresh_tag = True
-
-token = ''
 
 headers = {
    "Accept" : "application/vnd.github+json",
@@ -38,12 +33,14 @@ def get_release_id():
    if r.status_code == 200:
       id = json["id"]
       print(f'[info] latest release id: {id}.')
-      return id,json['tag_name']
+      return id, json["tag_name"]
    else:
-      if json["message"] == "Not Found":
-         print("[warning] status_code: "+str(r.status_code))
-         print('[info] would get 404 status_code if there were no release. or check your network.')
-         return None
+        if json["message"] == "Not Found":
+            print("[warning] status_code: "+str(r.status_code))
+            print('[info] would get 404 status_code if there were no release. or check your network.')
+            return None, None
+        else:
+            print('[error] '+r.status_code)
 @try_func
 def get_branch_sha():
   
@@ -61,8 +58,8 @@ data_of_new_release= {
    "draft": False
 }
 def post_new_release():
-   release_id, tag_name = get_release_id()
-   if not release_id == None:
+   release_id,tag_name = get_release_id()
+   if  release_id :
         #delete release
         r1 = requests.delete(f'https://api.github.com/repos/{user}/{repo}/releases/{release_id}',headers=headers,proxies=proxies_dict)
         if r1.status_code == 204 :
@@ -99,7 +96,7 @@ def main():
     with open(os.path.join('./public', 'freecdn-manifest.txt'), 'w', encoding='utf8') as f:
         hash256 = CalcFileSha256_with_base64(
             os.path.join('./public', 'manifest-full.txt'))
-        f.write('@include\n\t/manifest-full.txt\n@global\n\topen_timeout=0\n/manifest-full.txt')
+        f.write('/manifest-full.txt')
         if is_refresh_tag:
             post_new_release()
         for cdn in cdn_list:
@@ -111,6 +108,7 @@ def main():
             else:
                 f.write(f'\n\t{cdn}{user}/{repo}/{branch}/manifest-full.txt')
         f.write(f'\n\thash={hash256}')
+        f.write('\n@include\n\t/manifest-full.txt\n@global\n\topen_timeout=0s')
     print('[success] manifest_file generaeted.')
 if __name__ == '__main__':
     main()

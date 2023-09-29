@@ -68,7 +68,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 <font color=#808080 >*注：脚本会自动urlencode，将不是url元字符的字符转义以兼容freecdn-js。*</font>
 
-或者你也用hexo博客（如果你也使用hexo博客，需要把四个`.py`文件放在博客根目录），那么可以使用`import_to_db_with_hexo_blog.py`根据`.md`（博客写作使用markdown）文件的内容直接生成`pic.conf`（作用和`custom.conf`一样，可以用`--merge`合并到`freecdn-manifest.txt`），无需手动把url添加到`urls.txt`。`.md`放在`source\_posts`，或根据需要自行修改。`.py`文件中的正则表达需要根据自己的需求更改。如果你也使用[hexo-volantis](https://github.com/volantis-x/community)可以试着直接运行。脚本适配了`![img](url)`、`{%link%}`、`{%image%}`、`headimg`四个`tag`。
+或者你也用hexo博客（如果你也使用hexo博客，需要把对应的`.py`文件放在博客根目录），那么可以使用`import_to_db_with_hexo_blog.py`根据`.md`（博客写作使用markdown）文件的内容直接生成`pic.conf`（作用和`custom.conf`一样，可以用`--merge`合并到`freecdn-manifest.txt`），无需手动把url添加到`urls.txt`。`.md`放在`source\_posts`，或根据需要自行修改。`.py`文件中的正则表达需要根据自己的需求更改。如果你也使用[hexo-volantis](https://github.com/volantis-x/community)可以试着直接运行。脚本适配了`![img](url)`、`{%link%}`、`{%image%}`、`headimg`四个`tag`。
 
 如果你像我一样把文件（图片和某些js）放在github（我使用[picx.xpoet.cn](https://picx.xpoet.cn/)作为管理工具，上传图片的同时能够自动生成cdn链接），能十分方便生成cdn链接。
 

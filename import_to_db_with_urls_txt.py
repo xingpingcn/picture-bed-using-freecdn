@@ -8,28 +8,8 @@ import requests
 import hashlib
 import base64
 import sqlite3
-cdn_list = ['https://jsd.cdn.zzko.cn/gh/', 'https://cdn.jsdelivr.us/gh/',
-            'https://cdn.jsdelivr.ren/gh/', 'https://cdn.jsdelivr.net/gh/', 'https://raw.githubusercontent.com/']
-
-blog_md_file_dir = './source/_posts'
-is_output_to_txt = False
+from config import *
 os.chdir(sys.path[0])  # os.chdir(sys.path[0])把当前py文件所在路径设置为当前运行路径.
-
-is_use_proxy = True
-if is_use_proxy:    
-    proxies_dict = {'http': 'socks5://127.0.0.1:10808',
-                        'https': 'socks5://127.0.0.1:10808'}
-else:
-    proxies_dict ={}
-dir_for_custom_conf = 'dir_for_custom_conf'  # 储存文件的文件夹名称
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'Accept-Language': 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
-    'Accept-Encoding': 'gzip, deflate, br',
-    'Sec-Ch-Ua-Platform': "Windows",
-    'Cache-Control': 'no-cache',
-}
 
 
 class main():
@@ -41,7 +21,16 @@ class main():
         self.lock = threading.Lock()
         self.thread_list = []
         self.lock_for_write_file = threading.Lock()
-
+    def is_vaild_url(self,url,re_obj = None):
+        '''
+        判断是否合法url
+        '''
+        if re.match(r'(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]', url):
+            return True
+        else:
+            print('非法url！如果是urls.txt文件结尾或开头的空白符请忽略这条警告。')
+            print(f'url为：\'{url}\', {re_obj}')
+            return False
     def is_url_in_db(self, url, cursor) -> bool:
         '''
         不存在的话返回fasle
@@ -105,8 +94,36 @@ class main():
         else:
             print(
                 f"\033[5;30;45m[error] download one of the pictures failed↓\n{url}\033[0m")
+    def write_url_to_db(self,url,hash256,cursor= None,sqlite3_conn= None):
+        # 写入url hash到db
+        if not cursor == None:
+            with self.lock:
+                cursor.execute(
+                    f'insert into table_urls (hash, url) values (\'{hash256}\', \'{url}\')')
+                sqlite3_conn.commit()
+            print(f'[success] import {url} to db')
 
-    def import_url_to_db(self, url):
+    def write_file(self,url,cursor=None,res_url=None,hash256 = None):
+        with self.lock_for_write_file:
+            self.f_to_w.write(f'\n{url}')
+            for cdn in cdn_list:
+                if not cdn == 'https://raw.githubusercontent.com/':
+                    self.f_to_w.write(f'\n\t{cdn}{res_url}')
+                else:
+                    try:
+                        res_url2 = re.search(
+                            r'@(\S+?)/', f'{res_url}').group(1)
+                        res_url = res_url.replace(
+                            f'@{res_url2}', f'/{res_url2}')
+                        self.f_to_w.write(f'\n\t{cdn}{res_url}')
+                    except:
+                        pass
+            if not cursor == None:
+                self.f_to_w.write(
+                    f'\n\thash={self.get_hash_in_db(url,cursor)}')
+            else:
+                self.f_to_w.write(f'\n\thash={hash256}')
+    def import_url_to_file(self, url):
         try:
             sqlite3_conn = sqlite3.connect(os.path.join(
                 os.path.expanduser('~'), '.freecdn\custom.db'))
@@ -118,36 +135,15 @@ class main():
                     self.down_file(url, path_url)
                 hash256 = self.CalcFileSha256_with_base64(
                     f'{dir_for_custom_conf}/{path_url}')  # 计算hash
-
-                # 写入url hash到db
-                with self.lock:
-                    cursor.execute(
-                        f'insert into table_urls (hash, url) values (\'{hash256}\', \'{url}\')')
-                    sqlite3_conn.commit()
-                print(f'[success] import {url} to db')
-
+                # 写入数据库
+                self.write_url_to_db(url,hash256,cursor,sqlite3_conn)
+                
         except Exception as e:
             print(e, '↓\nurl: '+url)
         else:
             try:
                 res_url = self.url_split(url)
-                path_url = res_url.replace('/', '')
-                with self.lock_for_write_file:
-                    self.f_to_w.write(f'\n{url}')
-                    for cdn in cdn_list:
-                        if not cdn == 'https://raw.githubusercontent.com/':
-                            self.f_to_w.write(f'\n\t{cdn}{res_url}')
-                        else:
-                            try:
-                                res_url2 = re.search(
-                                    r'@(\S+?)/', f'{res_url}').group(1)
-                                res_url = res_url.replace(
-                                    f'@{res_url2}', f'/{res_url2}')
-                                self.f_to_w.write(f'\n\t{cdn}{res_url}')
-                            except:
-                                pass
-                    self.f_to_w.write(
-                        f'\n\thash={self.get_hash_in_db(url,cursor)}')
+                self.write_file(url,cursor,res_url)
             except Exception as e:
                 print(e)
         finally:
@@ -159,18 +155,16 @@ class main():
             try:
                 self.f_to_w = open(
                     f'./{self.name_of_conf_to_writ}', 'w', encoding='utf8')
-                self.f_to_w.write('@global\n\topen_timeout=0')
+                self.f_to_w.write('@global\n\topen_timeout=0s')
                 for url in f.readlines():
                     url = url.replace('\n', '')
                     # 验证是否是合法url
-                    if not re.match(r'(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]', url):
-                        print('非法url！如果是urls.txt文件结尾或开头的空白符请忽略这条警告。')
-                        print(url)
+                    if not self.is_vaild_url(url):
                         continue
                     else:
 
                         self.thread_list.append(self.pool.submit(
-                            self.import_url_to_db, self.url_encode(url)))
+                            self.import_url_to_file, self.url_encode(url)))
             except Exception as e:
                 print(e)
 
