@@ -2,11 +2,11 @@
 blog_md_file_dir = './source/_posts'
 blog_public_dir = './public'
 
-user = 'xingpingcn'
-repo = 'xingpingcn.github.io'
+user = ''
+repo = ''
 branch = 'main'
-is_refresh_tag = True
-token = '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'
+is_refresh_tag = False
+token = ''
 
 
 cdn_list = ['https://jsd.cdn.zzko.cn/gh/', 'https://cdn.jsdelivr.us/gh/',
@@ -15,7 +15,7 @@ cdn_list = ['https://jsd.cdn.zzko.cn/gh/', 'https://cdn.jsdelivr.us/gh/',
 is_output_to_txt = False #输出md文件中的url到txt文件urls_in_md.txt
 
 is_import_html_to_conf = True #导入“blog_public_dir”中的html到pic.conf
-html_file_to_ignore = ['google4e035139f56cb1e9.html']
+html_file_to_ignore = ['']
 
 is_use_proxy = True
 if is_use_proxy:    
