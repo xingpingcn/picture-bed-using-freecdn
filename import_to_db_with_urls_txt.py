@@ -123,6 +123,8 @@ class main():
                     f'\n\thash={self.get_hash_in_db(url,cursor)}')
             else:
                 self.f_to_w.write(f'\n\thash={hash256}')
+                self.f_to_w.write(f'\n\tmime=text/html')
+                
     def import_url_to_file(self, url):
         try:
             sqlite3_conn = sqlite3.connect(os.path.join(

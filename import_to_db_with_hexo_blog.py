@@ -31,8 +31,6 @@ class main2(main):
             try:
                 res_url = f'{user}/{repo}@{branch}/{filename_encode}'
                 self.write_file(url,res_url=res_url,hash256=hash256)
-                if filename == 'index.html':
-                    self.write_file('/',res_url=res_url,hash256=hash256)
             except Exception as e:
                 print(e, '↓\n[error] in writing file - url: '+url)
     
