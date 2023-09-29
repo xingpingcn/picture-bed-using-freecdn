@@ -62,6 +62,16 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
         https://cdn.jsdelivr.ren/gh/xingpingcn/website.comments/app.js
         https://cdn.jsdelivr.net/gh/xingpingcn/website.comments/app.js
         hash=xWPhZXLUcZFkPltRZW5UXuzEnLlNlkcIx55vlu5SB7M=
+    // 如果`is_import_html_to_conf` = `True`
+    /index.html
+        https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/index.html
+        https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@main/index.html
+        https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/index.html
+        https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/index.html
+        https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/index.html
+        hash=98HPGpSw/VfpGXiGFurKmHAC76gR5n2R2KNTWrisOTg=
+        mime=text/html
+
 ```
 
 </details>
@@ -72,7 +82,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 如果你像我一样把文件（图片和某些js）放在github（我使用[picx.xpoet.cn](https://picx.xpoet.cn/)作为管理工具，上传图片的同时能够自动生成cdn链接），能十分方便生成cdn链接。
 
-在`.py`文件头部可以设置是否使用代理（v2ray代理，默认开启），需要自行设置。
+在`config.py`文件可以设置是否使用代理（v2ray代理，默认开启），需要自行设置。
 
 在上传hexo博客后使用`refresh_cdn_cache.py`进行刷新。通过访问`purge.jsdelivr.net/resource`来刷新`cdn.jsdelivr.net/resource`缓存。
 
@@ -80,7 +90,9 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 `generate_external_manifest_file.py`用于生成`freecdn-manifest.txt`，`.txt`储存用于加速`manifest-full.txt`的cdn链接。需要在文件中填写`user`、`repo`等信息。
 
-`generate_external_manifest_file.py`中的`is_refresh_tag`为 `True`时能刷新博客的release`tag`从而达到即时更新cdn缓存的目的（仅刷新`freecdn-manifest.txt`中加速`manifest-full.txt`的cdn）。需要填写`user`、`token`等信息。
+`generate_external_manifest_file.py`中的`is_refresh_tag`为 `True`（config.py中设置）时能刷新博客的release`tag`从而达到即时更新cdn缓存的目的（仅刷新`freecdn-manifest.txt`中加速`manifest-full.txt`的cdn）。需要填写`user`、`token`等信息。
+
+`is_import_html_to_conf`为`True`时会把html文件也导入到`pic.conf`。
 
 <font color=#808080 >*注：若在没有更新repo资源的时候重复刷新tag可能会生成多个`draft` release；使用该.py文件需要上传两次博客，见[和hexo配合使用](#和hexo配合使用)的第二个示例*</font>
 
@@ -104,12 +116,14 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
     @global
         open_timeout=0
     /manifest-full.txt
+        // `is_refresh_tag`为 `True` 时候@main变为@{tag_name}
         https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt
         https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt
         https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt
         https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/manifest-full.txt
         https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/manifest-full.txt
         hash=izgWMFIdMtd29Zy7kWt3rWohTm7WQsZ9003qUATHdFo=
+        
 ```
 
 </details>
@@ -120,7 +134,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 如果url不在数据库中，则判断本地是否存储了`urls.txt`或`.md`（`import_to_db_with_hexo_blog.py`无需`urls.txt`，脚本内自动处理）中的文件，如果没有则下载文件。如果有则计算`hash`并写入`.conf`（或`pic.conf`）。
 
-下载文件储存在同目录的`dir_for_custom_conf`文件夹中，可以在`.py`文件头部修改位置。
+下载文件储存在同目录的`dir_for_custom_conf`文件夹中，可以在`config.py`文件修改位置。
 
 内置了几个`类cdn.jsdelivr.net`的cdn。其中jsd.cdn.zzko.cn的GitHub地址是[这里](https://github.com/54ayao/Chinajsdelivr)
 
