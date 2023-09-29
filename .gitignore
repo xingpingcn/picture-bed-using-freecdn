@@ -10,4 +10,4 @@ _multiconfig.yml
 /image/*
 freecdn-internal/
 **/freecdn-loader.min.js
-__pycache__/*
+**/__pycache__
