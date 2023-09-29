@@ -38,7 +38,7 @@ def get_release_id():
    if r.status_code == 200:
       id = json["id"]
       print(f'[info] latest release id: {id}.')
-      return id
+      return id,json['tag_name']
    else:
       if json["message"] == "Not Found":
          print("[warning] status_code: "+str(r.status_code))
@@ -61,7 +61,7 @@ data_of_new_release= {
    "draft": False
 }
 def post_new_release():
-   release_id = get_release_id()
+   release_id, tag_name = get_release_id()
    if not release_id == None:
         #delete release
         r1 = requests.delete(f'https://api.github.com/repos/{user}/{repo}/releases/{release_id}',headers=headers,proxies=proxies_dict)
@@ -69,7 +69,7 @@ def post_new_release():
             print('[success] old release deleted.')
         else:
             print('[error] '+r1.content)
-        r2 = requests.delete(f'https://api.github.com/repos/{user}/{repo}/git/refs/tags/{branch_sha}',headers=headers,proxies=proxies_dict)
+        r2 = requests.delete(f'https://api.github.com/repos/{user}/{repo}/git/refs/tags/{tag_name}',headers=headers,proxies=proxies_dict)
         if r1.status_code == 204 :
             print('[success] old tag deleted.')
         else:
