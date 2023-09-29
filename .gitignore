@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+public/
+.deploy*/
+_multiconfig.yml
+/node_modules/*
+!/node_modules/hexo-theme-volantis
+/image/*
+freecdn-internal/
+**/freecdn-loader.min.js
+__pycache__/
