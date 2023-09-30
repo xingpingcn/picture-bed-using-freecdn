@@ -3,15 +3,15 @@ blog_md_file_dir = './source/_posts'
 blog_public_dir = './public'
 blog_deploy_dir ='./.deploy_git'
 #储存静态文件的GitHub repo信息
-user = 'xingpingcn'
-repo = 'xingpingcn.github.io'
+user = ''
+repo = ''
 branch = 'main'
 # 如果要使用npm空间则填写，不使用则留空
-npm_name_of_pic_bed = 'p-hosting-for-xp'
-npm_name_of_html_package = 'html-hosting-for-xp'
+npm_name_of_pic_bed = ''
+npm_name_of_html_package = ''
 
-is_refresh_tag = True
-token = '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'
+is_refresh_tag = False
+token = ''
 
 
 cdn_list = {
@@ -24,7 +24,7 @@ cdn_list = {
 is_output_to_txt = False #输出md文件中的url到txt文件urls_in_md.txt
 
 is_import_html_to_conf = True #导入“blog_public_dir”中的html到pic.conf
-html_file_to_ignore = ['google4e035139f56cb1e9.html']
+html_file_to_ignore = ['']
 
 is_use_proxy = True
 if is_use_proxy:    
