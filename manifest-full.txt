@@ -9,29 +9,41 @@
 @global
 	open_timeout=0s
 
-https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.3ezxjhosk9i.png
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230420/image.3ezxjhosk9i.png
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230420/image.3ezxjhosk9i.png
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.3ezxjhosk9i.png
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.3ezxjhosk9i.png
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.3ezxjhosk9i.png
-	hash=rQBa5N+oDXPCMQm6zNGyyTxHCBQaecdi2IpAVVy0j6M=
-
 https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.2v43xxro3vs0.png
 	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230420/image.2v43xxro3vs0.png
 	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230420/image.2v43xxro3vs0.png
 	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.2v43xxro3vs0.png
 	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.2v43xxro3vs0.png
 	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.2v43xxro3vs0.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230420/image.2v43xxro3vs0.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230420/image.2v43xxro3vs0.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230420/image.2v43xxro3vs0.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230420/image.2v43xxro3vs0.png
 	hash=SMx3Q/CYveyjwzccB5d8Us2JrODvxgqlMZ41VYLZlGo=
 
-https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
-	hash=zbslt0LSwMKnFI72Sb686T1NrGA2CD3hKg2ZeQM6DRY=
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.3ezxjhosk9i.png
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230420/image.3ezxjhosk9i.png
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230420/image.3ezxjhosk9i.png
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.3ezxjhosk9i.png
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.3ezxjhosk9i.png
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.3ezxjhosk9i.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230420/image.3ezxjhosk9i.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230420/image.3ezxjhosk9i.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230420/image.3ezxjhosk9i.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230420/image.3ezxjhosk9i.png
+	hash=rQBa5N+oDXPCMQm6zNGyyTxHCBQaecdi2IpAVVy0j6M=
+
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.64ovonl779w0.png
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230420/image.64ovonl779w0.png
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230420/image.64ovonl779w0.png
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.64ovonl779w0.png
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.64ovonl779w0.png
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.64ovonl779w0.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230420/image.64ovonl779w0.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230420/image.64ovonl779w0.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230420/image.64ovonl779w0.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230420/image.64ovonl779w0.png
+	hash=UQ5bL+tHFMkxajllI2DMbyfHBBQJ/He1SLQi2RBwtV8=
 
 https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/pngwing.com.yfryst5dm0w.webp
 	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230506/pngwing.com.yfryst5dm0w.webp
@@ -39,6 +51,10 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/pngwi
 	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230506/pngwing.com.yfryst5dm0w.webp
 	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/pngwing.com.yfryst5dm0w.webp
 	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230506/pngwing.com.yfryst5dm0w.webp
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230506/pngwing.com.yfryst5dm0w.webp
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230506/pngwing.com.yfryst5dm0w.webp
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230506/pngwing.com.yfryst5dm0w.webp
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230506/pngwing.com.yfryst5dm0w.webp
 	hash=MJbVXuelwh5xMqNuuQ+X2o0VKQOws+d0C+21u0s1Lqk=
 
 https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.5hpz9c2gz240.png
@@ -47,15 +63,11 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image
 	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.5hpz9c2gz240.png
 	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.5hpz9c2gz240.png
 	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.5hpz9c2gz240.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230420/image.5hpz9c2gz240.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230420/image.5hpz9c2gz240.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230420/image.5hpz9c2gz240.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230420/image.5hpz9c2gz240.png
 	hash=kgGImt6EIMG+tACGsrZtnfwF5nQ3UPXNawkhMZXRTy4=
-
-https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.64ovonl779w0.png
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230420/image.64ovonl779w0.png
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230420/image.64ovonl779w0.png
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.64ovonl779w0.png
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.64ovonl779w0.png
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.64ovonl779w0.png
-	hash=UQ5bL+tHFMkxajllI2DMbyfHBBQJ/He1SLQi2RBwtV8=
 
 https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.30uajx353wa0.png
 	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230420/image.30uajx353wa0.png
@@ -63,39 +75,11 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image
 	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.30uajx353wa0.png
 	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.30uajx353wa0.png
 	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.30uajx353wa0.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230420/image.30uajx353wa0.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230420/image.30uajx353wa0.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230420/image.30uajx353wa0.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230420/image.30uajx353wa0.png
 	hash=+VN2lU3wC4frNKmQNPh0zfA3BgKVAjuwt7pf4WtFheI=
-
-https://gcore.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot12.png
-	https://jsd.cdn.zzko.cn/gh/cdn-x/wiki@1.0.2/prohud/screenshot12.png
-	https://cdn.jsdelivr.us/gh/cdn-x/wiki@1.0.2/prohud/screenshot12.png
-	https://cdn.jsdelivr.ren/gh/cdn-x/wiki@1.0.2/prohud/screenshot12.png
-	https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot12.png
-	https://raw.githubusercontent.com/cdn-x/wiki/1.0.2/prohud/screenshot12.png
-	hash=2S5emnyzIqHkzRrgMdCT6PJTMcRgqMe57OTDOnIZuhw=
-
-https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/image.6tgypdie8x40.png
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230506/image.6tgypdie8x40.png
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230506/image.6tgypdie8x40.png
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230506/image.6tgypdie8x40.png
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/image.6tgypdie8x40.png
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230506/image.6tgypdie8x40.png
-	hash=0A1gga5sNw5Dqypqg4Gl6Fs8Tr5gbxIPQSuF6mg2fsM=
-
-https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/logo%20(2).ln5ua8psy9s.webp
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230525/logo%20(2).ln5ua8psy9s.webp
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230525/logo%20(2).ln5ua8psy9s.webp
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230525/logo%20(2).ln5ua8psy9s.webp
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/logo%20(2).ln5ua8psy9s.webp
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230525/logo%20(2).ln5ua8psy9s.webp
-	hash=53vmPtDi0FDFXfMGWxx4vfPICcg1nY8rLgmQh7wjZow=
-
-https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/image.p9bxtn3d6ww.webp
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230506/image.p9bxtn3d6ww.webp
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230506/image.p9bxtn3d6ww.webp
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230506/image.p9bxtn3d6ww.webp
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/image.p9bxtn3d6ww.webp
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230506/image.p9bxtn3d6ww.webp
-	hash=8hqNgE+WmcEtaHSPGaGKsoehhaJiCh9YFFcK6hphSxE=
 
 https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.1anm5qwvdhnk.png
 	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230420/image.1anm5qwvdhnk.png
@@ -103,23 +87,47 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image
 	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.1anm5qwvdhnk.png
 	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.1anm5qwvdhnk.png
 	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.1anm5qwvdhnk.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230420/image.1anm5qwvdhnk.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230420/image.1anm5qwvdhnk.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230420/image.1anm5qwvdhnk.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230420/image.1anm5qwvdhnk.png
 	hash=7SzD87gASgCEVcFb0JjBFdQsgBJ7NlclhSn4lmL2sFc=
 
-https://gcore.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot13.png
-	https://jsd.cdn.zzko.cn/gh/cdn-x/wiki@1.0.2/prohud/screenshot13.png
-	https://cdn.jsdelivr.us/gh/cdn-x/wiki@1.0.2/prohud/screenshot13.png
-	https://cdn.jsdelivr.ren/gh/cdn-x/wiki@1.0.2/prohud/screenshot13.png
-	https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot13.png
-	https://raw.githubusercontent.com/cdn-x/wiki/1.0.2/prohud/screenshot13.png
-	hash=UZ98nEhOhWsPsd09BfIBTaXPzVYWcK5KY1flCxvIcC0=
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230419/%E8%87%AD%E5%8D%B7%E5%AE%9D.74vk4cdjex40.jpg
+	hash=zbslt0LSwMKnFI72Sb686T1NrGA2CD3hKg2ZeQM6DRY=
 
-https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.55d0qoox6bg0.png
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230420/image.55d0qoox6bg0.png
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230420/image.55d0qoox6bg0.png
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.55d0qoox6bg0.png
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.55d0qoox6bg0.png
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.55d0qoox6bg0.png
-	hash=ZBqMKckpg/nAYZYt1puoZjKsqwhqAObztqrisJQOijw=
+https://gcore.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot12.png
+	https://jsd.cdn.zzko.cn/gh/cdn-x/wiki@1.0.2/prohud/screenshot12.png
+	https://cdn.jsdelivr.us/gh/cdn-x/wiki@1.0.2/prohud/screenshot12.png
+	https://cdn.jsdelivr.ren/gh/cdn-x/wiki@1.0.2/prohud/screenshot12.png
+	https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot12.png
+	https://raw.githubusercontent.com/cdn-x/wiki/1.0.2/prohud/screenshot12.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/prohud/screenshot12.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/prohud/screenshot12.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/prohud/screenshot12.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/prohud/screenshot12.png
+	hash=2S5emnyzIqHkzRrgMdCT6PJTMcRgqMe57OTDOnIZuhw=
+
+https://gcore.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot11.png
+	https://jsd.cdn.zzko.cn/gh/cdn-x/wiki@1.0.2/prohud/screenshot11.png
+	https://cdn.jsdelivr.us/gh/cdn-x/wiki@1.0.2/prohud/screenshot11.png
+	https://cdn.jsdelivr.ren/gh/cdn-x/wiki@1.0.2/prohud/screenshot11.png
+	https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot11.png
+	https://raw.githubusercontent.com/cdn-x/wiki/1.0.2/prohud/screenshot11.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/prohud/screenshot11.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/prohud/screenshot11.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/prohud/screenshot11.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/prohud/screenshot11.png
+	hash=5+zbnn3GuVXT4UyxuN3l+P9M0GQ6qZbz713guO7ris0=
 
 https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.5rkudgvs3rk0.png
 	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230525/image.5rkudgvs3rk0.png
@@ -127,23 +135,47 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image
 	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230525/image.5rkudgvs3rk0.png
 	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.5rkudgvs3rk0.png
 	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230525/image.5rkudgvs3rk0.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230525/image.5rkudgvs3rk0.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230525/image.5rkudgvs3rk0.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230525/image.5rkudgvs3rk0.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230525/image.5rkudgvs3rk0.png
 	hash=yf8D2Nn8uNZzXa/s3D3qqQSxRUScliKyw5E76Ur07IE=
 
-https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230508/Git-Logo-2Color.11u6182b8cr4.webp
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230508/Git-Logo-2Color.11u6182b8cr4.webp
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230508/Git-Logo-2Color.11u6182b8cr4.webp
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230508/Git-Logo-2Color.11u6182b8cr4.webp
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230508/Git-Logo-2Color.11u6182b8cr4.webp
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230508/Git-Logo-2Color.11u6182b8cr4.webp
-	hash=dREDvJkP02fJ9ALiDtYeMDdeH+XhCa34n0TNDj9NG8g=
+https://gcore.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot13.png
+	https://jsd.cdn.zzko.cn/gh/cdn-x/wiki@1.0.2/prohud/screenshot13.png
+	https://cdn.jsdelivr.us/gh/cdn-x/wiki@1.0.2/prohud/screenshot13.png
+	https://cdn.jsdelivr.ren/gh/cdn-x/wiki@1.0.2/prohud/screenshot13.png
+	https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot13.png
+	https://raw.githubusercontent.com/cdn-x/wiki/1.0.2/prohud/screenshot13.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/prohud/screenshot13.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/prohud/screenshot13.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/prohud/screenshot13.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/prohud/screenshot13.png
+	hash=UZ98nEhOhWsPsd09BfIBTaXPzVYWcK5KY1flCxvIcC0=
 
-https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.6yhg5c0hr6w0.webp
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230525/image.6yhg5c0hr6w0.webp
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230525/image.6yhg5c0hr6w0.webp
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230525/image.6yhg5c0hr6w0.webp
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.6yhg5c0hr6w0.webp
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230525/image.6yhg5c0hr6w0.webp
-	hash=zrKyBXb9enBigG8ZR8kDhCACAdkg5SKTGQtXYvDo3Ak=
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/logo%20(2).ln5ua8psy9s.webp
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230525/logo%20(2).ln5ua8psy9s.webp
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230525/logo%20(2).ln5ua8psy9s.webp
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230525/logo%20(2).ln5ua8psy9s.webp
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/logo%20(2).ln5ua8psy9s.webp
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230525/logo%20(2).ln5ua8psy9s.webp
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230525/logo%20(2).ln5ua8psy9s.webp
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230525/logo%20(2).ln5ua8psy9s.webp
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230525/logo%20(2).ln5ua8psy9s.webp
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230525/logo%20(2).ln5ua8psy9s.webp
+	hash=53vmPtDi0FDFXfMGWxx4vfPICcg1nY8rLgmQh7wjZow=
+
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.55d0qoox6bg0.png
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230420/image.55d0qoox6bg0.png
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230420/image.55d0qoox6bg0.png
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.55d0qoox6bg0.png
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.55d0qoox6bg0.png
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.55d0qoox6bg0.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230420/image.55d0qoox6bg0.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230420/image.55d0qoox6bg0.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230420/image.55d0qoox6bg0.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230420/image.55d0qoox6bg0.png
+	hash=ZBqMKckpg/nAYZYt1puoZjKsqwhqAObztqrisJQOijw=
 
 https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.68re7eh8w2k0.webp
 	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230525/image.68re7eh8w2k0.webp
@@ -151,15 +183,23 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image
 	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230525/image.68re7eh8w2k0.webp
 	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.68re7eh8w2k0.webp
 	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230525/image.68re7eh8w2k0.webp
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230525/image.68re7eh8w2k0.webp
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230525/image.68re7eh8w2k0.webp
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230525/image.68re7eh8w2k0.webp
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230525/image.68re7eh8w2k0.webp
 	hash=0JbpSWprtqEDhQ3wuJFP8xtuyqu6z332i0Wnw4+A3XI=
 
-https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.az5hs7zk4ck.png
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230420/image.az5hs7zk4ck.png
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230420/image.az5hs7zk4ck.png
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.az5hs7zk4ck.png
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.az5hs7zk4ck.png
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.az5hs7zk4ck.png
-	hash=8Jk1D/Jd8Fm3JmZaCIIn+m/gGi+ZCIK+Mk6Dqq4S0Eo=
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.6yhg5c0hr6w0.webp
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230525/image.6yhg5c0hr6w0.webp
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230525/image.6yhg5c0hr6w0.webp
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230525/image.6yhg5c0hr6w0.webp
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.6yhg5c0hr6w0.webp
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230525/image.6yhg5c0hr6w0.webp
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230525/image.6yhg5c0hr6w0.webp
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230525/image.6yhg5c0hr6w0.webp
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230525/image.6yhg5c0hr6w0.webp
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230525/image.6yhg5c0hr6w0.webp
+	hash=zrKyBXb9enBigG8ZR8kDhCACAdkg5SKTGQtXYvDo3Ak=
 
 https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.4kwet6hmt6e0.webp
 	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230525/image.4kwet6hmt6e0.webp
@@ -167,7 +207,132 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image
 	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230525/image.4kwet6hmt6e0.webp
 	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.4kwet6hmt6e0.webp
 	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230525/image.4kwet6hmt6e0.webp
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230525/image.4kwet6hmt6e0.webp
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230525/image.4kwet6hmt6e0.webp
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230525/image.4kwet6hmt6e0.webp
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230525/image.4kwet6hmt6e0.webp
 	hash=Bg3JIgV9FmBgHB9/OKgjJdk7RytPEqdlasOlOqXM7e0=
+
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/image.6tgypdie8x40.png
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230506/image.6tgypdie8x40.png
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230506/image.6tgypdie8x40.png
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230506/image.6tgypdie8x40.png
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/image.6tgypdie8x40.png
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230506/image.6tgypdie8x40.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230506/image.6tgypdie8x40.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230506/image.6tgypdie8x40.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230506/image.6tgypdie8x40.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230506/image.6tgypdie8x40.png
+	hash=0A1gga5sNw5Dqypqg4Gl6Fs8Tr5gbxIPQSuF6mg2fsM=
+
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.az5hs7zk4ck.png
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230420/image.az5hs7zk4ck.png
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230420/image.az5hs7zk4ck.png
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.az5hs7zk4ck.png
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.az5hs7zk4ck.png
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.az5hs7zk4ck.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230420/image.az5hs7zk4ck.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230420/image.az5hs7zk4ck.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230420/image.az5hs7zk4ck.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230420/image.az5hs7zk4ck.png
+	hash=8Jk1D/Jd8Fm3JmZaCIIn+m/gGi+ZCIK+Mk6Dqq4S0Eo=
+
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.42rhvl10gk00.webp
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230525/image.42rhvl10gk00.webp
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230525/image.42rhvl10gk00.webp
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230525/image.42rhvl10gk00.webp
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.42rhvl10gk00.webp
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230525/image.42rhvl10gk00.webp
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230525/image.42rhvl10gk00.webp
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230525/image.42rhvl10gk00.webp
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230525/image.42rhvl10gk00.webp
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230525/image.42rhvl10gk00.webp
+	hash=lAWIrjdBNPPFC570vFC/l08cYvVBJqzxBjp3NBDmb3c=
+
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/image.p9bxtn3d6ww.webp
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230506/image.p9bxtn3d6ww.webp
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230506/image.p9bxtn3d6ww.webp
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230506/image.p9bxtn3d6ww.webp
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/image.p9bxtn3d6ww.webp
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230506/image.p9bxtn3d6ww.webp
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230506/image.p9bxtn3d6ww.webp
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230506/image.p9bxtn3d6ww.webp
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230506/image.p9bxtn3d6ww.webp
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230506/image.p9bxtn3d6ww.webp
+	hash=8hqNgE+WmcEtaHSPGaGKsoehhaJiCh9YFFcK6hphSxE=
+
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.5k737u1z06c0.webp
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230525/image.5k737u1z06c0.webp
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230525/image.5k737u1z06c0.webp
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230525/image.5k737u1z06c0.webp
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.5k737u1z06c0.webp
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230525/image.5k737u1z06c0.webp
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230525/image.5k737u1z06c0.webp
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230525/image.5k737u1z06c0.webp
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230525/image.5k737u1z06c0.webp
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230525/image.5k737u1z06c0.webp
+	hash=u7j9y8Zv5XeKoG99+wvkVZ4WZwZiU7/08536A8qUf/U=
+
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230508/image.7j23eumhawg0.webp
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230508/image.7j23eumhawg0.webp
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230508/image.7j23eumhawg0.webp
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230508/image.7j23eumhawg0.webp
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230508/image.7j23eumhawg0.webp
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230508/image.7j23eumhawg0.webp
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230508/image.7j23eumhawg0.webp
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230508/image.7j23eumhawg0.webp
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230508/image.7j23eumhawg0.webp
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230508/image.7j23eumhawg0.webp
+	hash=k0fo9kJ+lVnCIwUzTcYqtGRj6zK4WTayXN2fiyMZsds=
+
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.7grs1emx5ok0.png
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230420/image.7grs1emx5ok0.png
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230420/image.7grs1emx5ok0.png
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.7grs1emx5ok0.png
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.7grs1emx5ok0.png
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.7grs1emx5ok0.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230420/image.7grs1emx5ok0.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230420/image.7grs1emx5ok0.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230420/image.7grs1emx5ok0.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230420/image.7grs1emx5ok0.png
+	hash=D5Po8oLWNGQ5bk13Tr54ewGI6lcRU22JKIiCnwmKP0w=
+
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230926/image.7iqa1vhy4240.png
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230926/image.7iqa1vhy4240.png
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230926/image.7iqa1vhy4240.png
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230926/image.7iqa1vhy4240.png
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230926/image.7iqa1vhy4240.png
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230926/image.7iqa1vhy4240.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230926/image.7iqa1vhy4240.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230926/image.7iqa1vhy4240.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230926/image.7iqa1vhy4240.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230926/image.7iqa1vhy4240.png
+	hash=iMy5sA06y6EeFXbttEmtMzJagQ0o2D6tDP/FiXnIMfA=
+
+https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230508/Git-Logo-2Color.11u6182b8cr4.webp
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230508/Git-Logo-2Color.11u6182b8cr4.webp
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230508/Git-Logo-2Color.11u6182b8cr4.webp
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230508/Git-Logo-2Color.11u6182b8cr4.webp
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230508/Git-Logo-2Color.11u6182b8cr4.webp
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230508/Git-Logo-2Color.11u6182b8cr4.webp
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230508/Git-Logo-2Color.11u6182b8cr4.webp
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230508/Git-Logo-2Color.11u6182b8cr4.webp
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230508/Git-Logo-2Color.11u6182b8cr4.webp
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230508/Git-Logo-2Color.11u6182b8cr4.webp
+	hash=dREDvJkP02fJ9ALiDtYeMDdeH+XhCa34n0TNDj9NG8g=
+
+/hexo%E6%8A%98%E8%85%BE.html
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/hexo%E6%8A%98%E8%85%BE.html
+	https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@main/hexo%E6%8A%98%E8%85%BE.html
+	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/hexo%E6%8A%98%E8%85%BE.html
+	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/hexo%E6%8A%98%E8%85%BE.html
+	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/hexo%E6%8A%98%E8%85%BE.html
+	https://npm.onmicrosoft.cn/html-hosting-for-xp@1.0.4/hexo%E6%8A%98%E8%85%BE.html
+	https://jsd.onmicrosoft.cn/npm/html-hosting-for-xp@1.0.4/hexo%E6%8A%98%E8%85%BE.html
+	https://cdn.jsdelivr.net/npm/html-hosting-for-xp@1.0.4/hexo%E6%8A%98%E8%85%BE.html
+	https://unpkg.com/html-hosting-for-xp@1.0.4/hexo%E6%8A%98%E8%85%BE.html
+	hash=Vi1M+WdIyL9IIZPNoxwUDKB4CVQpRSkWRfJNkUkZh/Q=
+	mime=text/html
 
 /404.html
 	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/404.html
@@ -175,7 +340,37 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image
 	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/404.html
 	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/404.html
 	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/404.html
-	hash=nF1ftPIIfnAQW4Sel3+0LYFsB9Nv2o/8zScGpB1ouc0=
+	https://npm.onmicrosoft.cn/html-hosting-for-xp@1.0.4/404.html
+	https://jsd.onmicrosoft.cn/npm/html-hosting-for-xp@1.0.4/404.html
+	https://cdn.jsdelivr.net/npm/html-hosting-for-xp@1.0.4/404.html
+	https://unpkg.com/html-hosting-for-xp@1.0.4/404.html
+	hash=is7vHZz4jUn4qxNnznzncE3m09ynvJHYQDaLQ8BadN4=
+	mime=text/html
+
+/npm%E5%9B%BE%E5%BA%8A%EF%BC%88%E4%B8%8D%E9%9C%80%E8%A6%81%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%EF%BC%89.html
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/npm%E5%9B%BE%E5%BA%8A%EF%BC%88%E4%B8%8D%E9%9C%80%E8%A6%81%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%EF%BC%89.html
+	https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@main/npm%E5%9B%BE%E5%BA%8A%EF%BC%88%E4%B8%8D%E9%9C%80%E8%A6%81%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%EF%BC%89.html
+	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/npm%E5%9B%BE%E5%BA%8A%EF%BC%88%E4%B8%8D%E9%9C%80%E8%A6%81%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%EF%BC%89.html
+	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/npm%E5%9B%BE%E5%BA%8A%EF%BC%88%E4%B8%8D%E9%9C%80%E8%A6%81%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%EF%BC%89.html
+	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/npm%E5%9B%BE%E5%BA%8A%EF%BC%88%E4%B8%8D%E9%9C%80%E8%A6%81%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%EF%BC%89.html
+	https://npm.onmicrosoft.cn/html-hosting-for-xp@1.0.4/npm%E5%9B%BE%E5%BA%8A%EF%BC%88%E4%B8%8D%E9%9C%80%E8%A6%81%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%EF%BC%89.html
+	https://jsd.onmicrosoft.cn/npm/html-hosting-for-xp@1.0.4/npm%E5%9B%BE%E5%BA%8A%EF%BC%88%E4%B8%8D%E9%9C%80%E8%A6%81%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%EF%BC%89.html
+	https://cdn.jsdelivr.net/npm/html-hosting-for-xp@1.0.4/npm%E5%9B%BE%E5%BA%8A%EF%BC%88%E4%B8%8D%E9%9C%80%E8%A6%81%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%EF%BC%89.html
+	https://unpkg.com/html-hosting-for-xp@1.0.4/npm%E5%9B%BE%E5%BA%8A%EF%BC%88%E4%B8%8D%E9%9C%80%E8%A6%81%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%EF%BC%89.html
+	hash=Id3DCye7nRawRZjYAJ6J6U8SCpAs6JsFGn3UsE7/K10=
+	mime=text/html
+
+/index.html
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/index.html
+	https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@main/index.html
+	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/index.html
+	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/index.html
+	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/index.html
+	https://npm.onmicrosoft.cn/html-hosting-for-xp@1.0.4/index.html
+	https://jsd.onmicrosoft.cn/npm/html-hosting-for-xp@1.0.4/index.html
+	https://cdn.jsdelivr.net/npm/html-hosting-for-xp@1.0.4/index.html
+	https://unpkg.com/html-hosting-for-xp@1.0.4/index.html
+	hash=bSKSVl2TKo3vsTDbjtCEXtPti5sIUnIEfjJjklfIpQk=
 	mime=text/html
 
 /hello-world.html
@@ -184,25 +379,12 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image
 	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/hello-world.html
 	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/hello-world.html
 	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/hello-world.html
-	hash=wC6sYVb7gRcXHxztSnNArYNQqiWsOFLszhs3/zO/JC8=
+	https://npm.onmicrosoft.cn/html-hosting-for-xp@1.0.4/hello-world.html
+	https://jsd.onmicrosoft.cn/npm/html-hosting-for-xp@1.0.4/hello-world.html
+	https://cdn.jsdelivr.net/npm/html-hosting-for-xp@1.0.4/hello-world.html
+	https://unpkg.com/html-hosting-for-xp@1.0.4/hello-world.html
+	hash=FPjC4X7tKrg/3xvVYCJ7965WxElsa54UScAa2swBqsk=
 	mime=text/html
-
-/hexo%E6%8A%98%E8%85%BE.html
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/hexo%E6%8A%98%E8%85%BE.html
-	https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@main/hexo%E6%8A%98%E8%85%BE.html
-	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/hexo%E6%8A%98%E8%85%BE.html
-	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/hexo%E6%8A%98%E8%85%BE.html
-	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/hexo%E6%8A%98%E8%85%BE.html
-	hash=i1Bk5GcXZRV0ukyUB+bsCFWHH8xwzPvOjACYaXpwK/Y=
-	mime=text/html
-
-https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.42rhvl10gk00.webp
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230525/image.42rhvl10gk00.webp
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230525/image.42rhvl10gk00.webp
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230525/image.42rhvl10gk00.webp
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.42rhvl10gk00.webp
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230525/image.42rhvl10gk00.webp
-	hash=lAWIrjdBNPPFC570vFC/l08cYvVBJqzxBjp3NBDmb3c=
 
 /test4.html
 	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/test4.html
@@ -210,33 +392,11 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image
 	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/test4.html
 	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/test4.html
 	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/test4.html
-	hash=5Mmwpb0LPyOW3yQH/14y23Y0aEe414xKibN7cy9f/mo=
-	mime=text/html
-
-https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.5k737u1z06c0.webp
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230525/image.5k737u1z06c0.webp
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230525/image.5k737u1z06c0.webp
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230525/image.5k737u1z06c0.webp
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image.5k737u1z06c0.webp
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230525/image.5k737u1z06c0.webp
-	hash=u7j9y8Zv5XeKoG99+wvkVZ4WZwZiU7/08536A8qUf/U=
-
-/index.html
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/index.html
-	https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@main/index.html
-	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/index.html
-	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/index.html
-	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/index.html
-	hash=98HPGpSw/VfpGXiGFurKmHAC76gR5n2R2KNTWrisOTg=
-	mime=text/html
-
-/
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/index.html
-	https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@main/index.html
-	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/index.html
-	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/index.html
-	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/index.html
-	hash=98HPGpSw/VfpGXiGFurKmHAC76gR5n2R2KNTWrisOTg=
+	https://npm.onmicrosoft.cn/html-hosting-for-xp@1.0.4/test4.html
+	https://jsd.onmicrosoft.cn/npm/html-hosting-for-xp@1.0.4/test4.html
+	https://cdn.jsdelivr.net/npm/html-hosting-for-xp@1.0.4/test4.html
+	https://unpkg.com/html-hosting-for-xp@1.0.4/test4.html
+	hash=n3UVPdIR5E/gULSPjr0701Bg35Y9cmS7VjvSmXarzKc=
 	mime=text/html
 
 /v2raywstls%E5%A4%AA%E6%85%A2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html
@@ -245,33 +405,12 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/image
 	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/v2raywstls%E5%A4%AA%E6%85%A2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html
 	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/v2raywstls%E5%A4%AA%E6%85%A2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html
 	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/v2raywstls%E5%A4%AA%E6%85%A2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html
-	hash=6NeW3qX3B5/I7ciidhkPGpHcRq9OEfK2C2p0nlSU/uo=
+	https://npm.onmicrosoft.cn/html-hosting-for-xp@1.0.4/v2raywstls%E5%A4%AA%E6%85%A2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html
+	https://jsd.onmicrosoft.cn/npm/html-hosting-for-xp@1.0.4/v2raywstls%E5%A4%AA%E6%85%A2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html
+	https://cdn.jsdelivr.net/npm/html-hosting-for-xp@1.0.4/v2raywstls%E5%A4%AA%E6%85%A2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html
+	https://unpkg.com/html-hosting-for-xp@1.0.4/v2raywstls%E5%A4%AA%E6%85%A2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html
+	hash=fc+IKpZWqNRliTVJ6PHUoxHfgdkty3FuuNuEZ5nROEw=
 	mime=text/html
-
-https://gcore.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot11.png
-	https://jsd.cdn.zzko.cn/gh/cdn-x/wiki@1.0.2/prohud/screenshot11.png
-	https://cdn.jsdelivr.us/gh/cdn-x/wiki@1.0.2/prohud/screenshot11.png
-	https://cdn.jsdelivr.ren/gh/cdn-x/wiki@1.0.2/prohud/screenshot11.png
-	https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot11.png
-	https://raw.githubusercontent.com/cdn-x/wiki/1.0.2/prohud/screenshot11.png
-	hash=5+zbnn3GuVXT4UyxuN3l+P9M0GQ6qZbz713guO7ris0=
-
-/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
-	https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@main/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
-	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
-	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
-	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
-	hash=UHX87zcQAp3BrvjwKRKg3hkV4vMBEiWEfzYDqE5tPss=
-	mime=text/html
-
-https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230508/image.7j23eumhawg0.webp
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230508/image.7j23eumhawg0.webp
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230508/image.7j23eumhawg0.webp
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230508/image.7j23eumhawg0.webp
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230508/image.7j23eumhawg0.webp
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230508/image.7j23eumhawg0.webp
-	hash=k0fo9kJ+lVnCIwUzTcYqtGRj6zK4WTayXN2fiyMZsds=
 
 /%E4%B8%BAhexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%87%AA%E9%80%82%E5%BA%94%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D%E5%9B%BE.html
 	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/%E4%B8%BAhexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%87%AA%E9%80%82%E5%BA%94%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D%E5%9B%BE.html
@@ -279,7 +418,24 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230508/image
 	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/%E4%B8%BAhexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%87%AA%E9%80%82%E5%BA%94%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D%E5%9B%BE.html
 	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/%E4%B8%BAhexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%87%AA%E9%80%82%E5%BA%94%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D%E5%9B%BE.html
 	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/%E4%B8%BAhexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%87%AA%E9%80%82%E5%BA%94%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D%E5%9B%BE.html
-	hash=CpchUfkMlw/BOQhyt461CkbZw2C14fiQLmzxCrt8ZEI=
+	https://npm.onmicrosoft.cn/html-hosting-for-xp@1.0.4/%E4%B8%BAhexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%87%AA%E9%80%82%E5%BA%94%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D%E5%9B%BE.html
+	https://jsd.onmicrosoft.cn/npm/html-hosting-for-xp@1.0.4/%E4%B8%BAhexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%87%AA%E9%80%82%E5%BA%94%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D%E5%9B%BE.html
+	https://cdn.jsdelivr.net/npm/html-hosting-for-xp@1.0.4/%E4%B8%BAhexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%87%AA%E9%80%82%E5%BA%94%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D%E5%9B%BE.html
+	https://unpkg.com/html-hosting-for-xp@1.0.4/%E4%B8%BAhexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%87%AA%E9%80%82%E5%BA%94%E5%9B%BE%E7%89%87%E5%8D%A0%E4%BD%8D%E5%9B%BE.html
+	hash=67FyUoskU+Akns00TIamqKcNG40P4QHQ+fwkO6am7MU=
+	mime=text/html
+
+/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
+	https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@main/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
+	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
+	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
+	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
+	https://npm.onmicrosoft.cn/html-hosting-for-xp@1.0.4/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
+	https://jsd.onmicrosoft.cn/npm/html-hosting-for-xp@1.0.4/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
+	https://cdn.jsdelivr.net/npm/html-hosting-for-xp@1.0.4/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
+	https://unpkg.com/html-hosting-for-xp@1.0.4/%E4%B8%BAvolantis%E6%B7%BB%E5%8A%A0cdn%E5%8A%A0%E9%80%9F.html
+	hash=FZWZwHObGiXy4MK/b390+FLVYzFbL7jWehOO9wklo1w=
 	mime=text/html
 
 /%E4%BD%BF%E7%94%A8freecdn-js%E6%8F%90%E9%AB%98hexo%E5%8D%9A%E5%AE%A2%E7%9A%84cdn%E7%A8%B3%E5%AE%9A%E6%80%A7.html
@@ -288,7 +444,11 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230508/image
 	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/%E4%BD%BF%E7%94%A8freecdn-js%E6%8F%90%E9%AB%98hexo%E5%8D%9A%E5%AE%A2%E7%9A%84cdn%E7%A8%B3%E5%AE%9A%E6%80%A7.html
 	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/%E4%BD%BF%E7%94%A8freecdn-js%E6%8F%90%E9%AB%98hexo%E5%8D%9A%E5%AE%A2%E7%9A%84cdn%E7%A8%B3%E5%AE%9A%E6%80%A7.html
 	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/%E4%BD%BF%E7%94%A8freecdn-js%E6%8F%90%E9%AB%98hexo%E5%8D%9A%E5%AE%A2%E7%9A%84cdn%E7%A8%B3%E5%AE%9A%E6%80%A7.html
-	hash=o9h5J/YfENxfeprsN9g0UroGD+t75F11qgkQDT7QZMI=
+	https://npm.onmicrosoft.cn/html-hosting-for-xp@1.0.4/%E4%BD%BF%E7%94%A8freecdn-js%E6%8F%90%E9%AB%98hexo%E5%8D%9A%E5%AE%A2%E7%9A%84cdn%E7%A8%B3%E5%AE%9A%E6%80%A7.html
+	https://jsd.onmicrosoft.cn/npm/html-hosting-for-xp@1.0.4/%E4%BD%BF%E7%94%A8freecdn-js%E6%8F%90%E9%AB%98hexo%E5%8D%9A%E5%AE%A2%E7%9A%84cdn%E7%A8%B3%E5%AE%9A%E6%80%A7.html
+	https://cdn.jsdelivr.net/npm/html-hosting-for-xp@1.0.4/%E4%BD%BF%E7%94%A8freecdn-js%E6%8F%90%E9%AB%98hexo%E5%8D%9A%E5%AE%A2%E7%9A%84cdn%E7%A8%B3%E5%AE%9A%E6%80%A7.html
+	https://unpkg.com/html-hosting-for-xp@1.0.4/%E4%BD%BF%E7%94%A8freecdn-js%E6%8F%90%E9%AB%98hexo%E5%8D%9A%E5%AE%A2%E7%9A%84cdn%E7%A8%B3%E5%AE%9A%E6%80%A7.html
+	hash=YKyQiZzMJoXaY0mIPkHLnypU2DY7KRmEVWaYj0DURCM=
 	mime=text/html
 
 /%E5%9C%A8GIT%E4%B8%AD%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%5B%E8%BD%AC%5D.html
@@ -297,16 +457,12 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230508/image
 	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/%E5%9C%A8GIT%E4%B8%AD%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%5B%E8%BD%AC%5D.html
 	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/%E5%9C%A8GIT%E4%B8%AD%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%5B%E8%BD%AC%5D.html
 	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/%E5%9C%A8GIT%E4%B8%AD%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%5B%E8%BD%AC%5D.html
-	hash=LtW7QoPNUcynGA1Iz9yO8O6CYir2OHcGEHNCC0lLcZw=
+	https://npm.onmicrosoft.cn/html-hosting-for-xp@1.0.4/%E5%9C%A8GIT%E4%B8%AD%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%5B%E8%BD%AC%5D.html
+	https://jsd.onmicrosoft.cn/npm/html-hosting-for-xp@1.0.4/%E5%9C%A8GIT%E4%B8%AD%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%5B%E8%BD%AC%5D.html
+	https://cdn.jsdelivr.net/npm/html-hosting-for-xp@1.0.4/%E5%9C%A8GIT%E4%B8%AD%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%5B%E8%BD%AC%5D.html
+	https://unpkg.com/html-hosting-for-xp@1.0.4/%E5%9C%A8GIT%E4%B8%AD%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%5B%E8%BD%AC%5D.html
+	hash=gtV/oDL7i8QLrR4/6/E876ThJf7HKZHpo1L0Ly1KfG0=
 	mime=text/html
-
-https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.7grs1emx5ok0.png
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230420/image.7grs1emx5ok0.png
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230420/image.7grs1emx5ok0.png
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.7grs1emx5ok0.png
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.7grs1emx5ok0.png
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.7grs1emx5ok0.png
-	hash=D5Po8oLWNGQ5bk13Tr54ewGI6lcRU22JKIiCnwmKP0w=
 
 /%E5%9C%A8python%E4%B8%AD%E8%BF%90%E8%A1%8Cbash%EF%BC%88windows%EF%BC%89.html
 	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/%E5%9C%A8python%E4%B8%AD%E8%BF%90%E8%A1%8Cbash%EF%BC%88windows%EF%BC%89.html
@@ -314,16 +470,24 @@ https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image
 	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/%E5%9C%A8python%E4%B8%AD%E8%BF%90%E8%A1%8Cbash%EF%BC%88windows%EF%BC%89.html
 	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/%E5%9C%A8python%E4%B8%AD%E8%BF%90%E8%A1%8Cbash%EF%BC%88windows%EF%BC%89.html
 	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/%E5%9C%A8python%E4%B8%AD%E8%BF%90%E8%A1%8Cbash%EF%BC%88windows%EF%BC%89.html
-	hash=Rf+WsiUooC9O4a9lUvTsscQM4vc80L2aPEAwd70dU18=
+	https://npm.onmicrosoft.cn/html-hosting-for-xp@1.0.4/%E5%9C%A8python%E4%B8%AD%E8%BF%90%E8%A1%8Cbash%EF%BC%88windows%EF%BC%89.html
+	https://jsd.onmicrosoft.cn/npm/html-hosting-for-xp@1.0.4/%E5%9C%A8python%E4%B8%AD%E8%BF%90%E8%A1%8Cbash%EF%BC%88windows%EF%BC%89.html
+	https://cdn.jsdelivr.net/npm/html-hosting-for-xp@1.0.4/%E5%9C%A8python%E4%B8%AD%E8%BF%90%E8%A1%8Cbash%EF%BC%88windows%EF%BC%89.html
+	https://unpkg.com/html-hosting-for-xp@1.0.4/%E5%9C%A8python%E4%B8%AD%E8%BF%90%E8%A1%8Cbash%EF%BC%88windows%EF%BC%89.html
+	hash=0Qhg6uywhsKo5tjohx5SI4rrRV4mfnpVnwVIRPHTejA=
 	mime=text/html
 
-https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230926/image.7iqa1vhy4240.png
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230926/image.7iqa1vhy4240.png
-	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230926/image.7iqa1vhy4240.png
-	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230926/image.7iqa1vhy4240.png
-	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230926/image.7iqa1vhy4240.png
-	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230926/image.7iqa1vhy4240.png
-	hash=iMy5sA06y6EeFXbttEmtMzJagQ0o2D6tDP/FiXnIMfA=
+https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20231001/image.2zlsco3s1iu0.png
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20231001/image.2zlsco3s1iu0.png
+	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20231001/image.2zlsco3s1iu0.png
+	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20231001/image.2zlsco3s1iu0.png
+	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20231001/image.2zlsco3s1iu0.png
+	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20231001/image.2zlsco3s1iu0.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20231001/image.2zlsco3s1iu0.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20231001/image.2zlsco3s1iu0.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20231001/image.2zlsco3s1iu0.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20231001/image.2zlsco3s1iu0.png
+	hash=34x07islc7d+UXPaen0UsH8jL2PUK1d0e4rFVYauY84=
 
 https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/style4.css
 	https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/style4.css
@@ -332,12 +496,23 @@ https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/style4.css
 	https://cdn.jsdelivr.net/gh/xingpingcn/website.comments/style4.css
 	hash=F839ZhZyJswxpRuWJtQQWyshcKKoITKrCMfTgmLJdBw=
 
+https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/app.js
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/app.js
+	https://cdn.jsdelivr.us/gh/xingpingcn/website.comments/app.js
+	https://cdn.jsdelivr.ren/gh/xingpingcn/website.comments/app.js
+	https://cdn.jsdelivr.net/gh/xingpingcn/website.comments/app.js
+	hash=skOqpeqLCT5lUTj8auCbpcgSyWdMCKpIOZuJcIT+rug=
+
 https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%8C%85%E5%9C%86%E5%BD%A2.2rx79tqffvu0.png
 	https://jsd.cdn.zzko.cn/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%8C%85%E5%9C%86%E5%BD%A2.2rx79tqffvu0.png
 	https://cdn.jsdelivr.us/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%8C%85%E5%9C%86%E5%BD%A2.2rx79tqffvu0.png
 	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%8C%85%E5%9C%86%E5%BD%A2.2rx79tqffvu0.png
 	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%8C%85%E5%9C%86%E5%BD%A2.2rx79tqffvu0.png
 	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230419/%E8%87%AD%E5%8D%B7%E5%8C%85%E5%9C%86%E5%BD%A2.2rx79tqffvu0.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230419/%E8%87%AD%E5%8D%B7%E5%8C%85%E5%9C%86%E5%BD%A2.2rx79tqffvu0.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230419/%E8%87%AD%E5%8D%B7%E5%8C%85%E5%9C%86%E5%BD%A2.2rx79tqffvu0.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230419/%E8%87%AD%E5%8D%B7%E5%8C%85%E5%9C%86%E5%BD%A2.2rx79tqffvu0.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230419/%E8%87%AD%E5%8D%B7%E5%8C%85%E5%9C%86%E5%BD%A2.2rx79tqffvu0.png
 	hash=xWPhZXLUcZFkPltRZW5UXuzEnLlNlkcIx55vlu5SB7M=
 
 https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.7grs1emx5ok0.png
@@ -346,15 +521,11 @@ https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420
 	https://cdn.jsdelivr.ren/gh/xingpingcn/picx-images-hosting@master/20230420/image.7grs1emx5ok0.png
 	https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230420/image.7grs1emx5ok0.png
 	https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.7grs1emx5ok0.png
+	https://npm.onmicrosoft.cn/p-hosting-for-xp@1.0.16/20230420/image.7grs1emx5ok0.png
+	https://jsd.onmicrosoft.cn/npm/p-hosting-for-xp@1.0.16/20230420/image.7grs1emx5ok0.png
+	https://cdn.jsdelivr.net/npm/p-hosting-for-xp@1.0.16/20230420/image.7grs1emx5ok0.png
+	https://unpkg.com/p-hosting-for-xp@1.0.16/20230420/image.7grs1emx5ok0.png
 	hash=D5Po8oLWNGQ5bk13Tr54ewGI6lcRU22JKIiCnwmKP0w=
-
-https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/js/search/hexo.js
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/js/search/hexo.js
-	https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@main/js/search/hexo.js
-	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@main/js/search/hexo.js
-	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@main/js/search/hexo.js
-	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/js/search/hexo.js
-	hash=tjmsGrRp9NKUZpKxowLU88VJxHiN8wWHN+VHVtDnvUg=
 
 https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@latest/canvas-ribbon.js
 	https://jsd.cdn.zzko.cn/gh/theme-next/theme-next-canvas-ribbon@latest/canvas-ribbon.js
@@ -363,10 +534,3 @@ https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@latest/canvas-ri
 	https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@latest/canvas-ribbon.js
 	https://raw.githubusercontent.com/theme-next/theme-next-canvas-ribbon/latest/canvas-ribbon.js
 	hash=zmnjl1XikM45Z9TvNAM98yoJ70ELAuA+h0ObF8ZIy54=
-
-https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/app.js
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/app.js
-	https://cdn.jsdelivr.us/gh/xingpingcn/website.comments/app.js
-	https://cdn.jsdelivr.ren/gh/xingpingcn/website.comments/app.js
-	https://cdn.jsdelivr.net/gh/xingpingcn/website.comments/app.js
-	hash=skOqpeqLCT5lUTj8auCbpcgSyWdMCKpIOZuJcIT+rug=

@@ -2,7 +2,7 @@ import os
 import sys,base64,hashlib,requests
 
 from config import *
-
+os.chdir(sys.path[0])  # os.chdir(sys.path[0])把当前py文件所在路径设置为当前运行路径.
 '''
 从freecdn-manifest.txt中生成manifest-full.txt和用于引入外部manifest的freecdn-manifest.txt。需要填写user、token等信息。
 
@@ -22,7 +22,7 @@ def try_func(func):
          try:
             return func()
          except Exception :
-            print('[error] check your network or uesr and repo')
+            print('[error] check your network or uesr, repo and token')
             raise
    return wrapper
 @try_func
@@ -93,20 +93,21 @@ def CalcFileSha256_with_base64(filname):
 
 def main():
     os.chdir(sys.path[0])  # os.chdir(sys.path[0])把当前py文件所在路径设置为当前运行路径.
-    with open(os.path.join('./public', 'freecdn-manifest.txt'), 'w', encoding='utf8') as f:
+    with open(os.path.join(f'.\{blog_deploy_dir}', 'freecdn-manifest.txt'), 'w', encoding='utf8') as f:
         hash256 = CalcFileSha256_with_base64(
-            os.path.join('./public', 'manifest-full.txt'))
+            os.path.join(f'.\{blog_deploy_dir}', 'manifest-full.txt'))
         f.write('/manifest-full.txt')
         if is_refresh_tag:
             post_new_release()
-        for cdn in cdn_list:
-            if  not cdn  == 'https://raw.githubusercontent.com/':
-                if is_refresh_tag:
-                    f.write(f'\n\t{cdn}{user}/{repo}@{branch_sha}/manifest-full.txt')
-                else:
-                   f.write(f'\n\t{cdn}{user}/{repo}@{branch}/manifest-full.txt')
-            else:
-                f.write(f'\n\t{cdn}{user}/{repo}/{branch}/manifest-full.txt')
+        for k,v in cdn_list.items():
+            for cdn in v:
+                if  k  == 'github':
+                    if is_refresh_tag:
+                        f.write(f'\n\t{cdn}{user}/{repo}@{branch_sha}/manifest-full.txt')
+                    else:
+                        f.write(f'\n\t{cdn}{user}/{repo}@{branch}/manifest-full.txt')
+                elif k == 'raw':
+                    f.write(f'\n\t{cdn}{user}/{repo}/{branch}/manifest-full.txt')
         f.write(f'\n\thash={hash256}')
         f.write('\n@include\n\t/manifest-full.txt\n@global\n\topen_timeout=0s')
     print('[success] manifest_file generaeted.')

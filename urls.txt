@@ -3,5 +3,4 @@ https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/style4.css
 https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230419/%E8%87%AD%E5%8D%B7%E5%8C%85%E5%9C%86%E5%BD%A2.2rx79tqffvu0.png
 https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230525/logo (2).ln5ua8psy9s.webp
 https://raw.githubusercontent.com/xingpingcn/picx-images-hosting/master/20230420/image.7grs1emx5ok0.png
-https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@main/js/search/hexo.js
 https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@latest/canvas-ribbon.js

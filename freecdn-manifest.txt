@@ -1,10 +1,10 @@
 /manifest-full.txt
-	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@3edd3a9daf/manifest-full.txt
-	https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@3edd3a9daf/manifest-full.txt
-	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@3edd3a9daf/manifest-full.txt
-	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@3edd3a9daf/manifest-full.txt
+	https://jsd.cdn.zzko.cn/gh/xingpingcn/xingpingcn.github.io@0b39d39c4b/manifest-full.txt
+	https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@0b39d39c4b/manifest-full.txt
+	https://cdn.jsdelivr.ren/gh/xingpingcn/xingpingcn.github.io@0b39d39c4b/manifest-full.txt
+	https://cdn.jsdelivr.net/gh/xingpingcn/xingpingcn.github.io@0b39d39c4b/manifest-full.txt
 	https://raw.githubusercontent.com/xingpingcn/xingpingcn.github.io/main/manifest-full.txt
-	hash=L05MVLjfxn0u0z+JTkOHjZ/YBhQ33e5IiOm+nT2oWIU=
+	hash=+SQK7EaMiu+4yEngCPi1TB5f9LtVwHXwHgoBf4dHxwA=
 @include
 	/manifest-full.txt
 @global

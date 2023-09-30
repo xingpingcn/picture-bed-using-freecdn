@@ -6,6 +6,7 @@ class main2(main):
     def __init__(self,name_of_conf_to_write) -> None:
         super().__init__(name_of_conf_to_write)
         self.pool_for_write_db = ThreadPoolExecutor(32)
+        self.get_latest_version_of_npm_hosting()
 
     def get_urls_in_md_file_and_generate(self,md_file: str, re_obj_list:list):
         for re_obj in re_obj_list:

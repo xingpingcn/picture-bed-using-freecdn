@@ -73,6 +73,19 @@ class main():
         else:
             print(f'unsupported url\n({url})')
 
+    def get_latest_version_of_npm_hosting(self):
+        self.pic_bed_hosting_latest_ver = ''
+        self.html_hosting_latest_ver = ''
+        if npm_name_of_pic_bed:
+            r = requests.get(f'https://registry.npmjs.org/{npm_name_of_pic_bed}',proxies=proxies_dict)
+            if r.status_code == 200:
+                self.pic_bed_hosting_latest_ver = r.json()["dist-tags"]["latest"]
+            
+        if npm_name_of_html_package:
+            r = requests.get(f'https://registry.npmjs.org/{npm_name_of_html_package}',proxies=proxies_dict)
+            if r.status_code == 200:
+                self.html_hosting_latest_ver = r.json()["dist-tags"]["latest"]
+
     def CalcFileSha256_with_base64(self, filname):
         ''' calculate file sha256 '''
         with open(filname, "rb") as f:
@@ -104,20 +117,39 @@ class main():
             print(f'[success] import {url} to db')
 
     def write_file(self,url,cursor=None,res_url=None,hash256 = None):
+        '''
+        res_url的格式应该为.*?/.*?@.*?/(.*)$
+        '''
+        
         with self.lock_for_write_file:
             self.f_to_w.write(f'\n{url}')
-            for cdn in cdn_list:
-                if not cdn == 'https://raw.githubusercontent.com/':
-                    self.f_to_w.write(f'\n\t{cdn}{res_url}')
-                else:
-                    try:
-                        res_url2 = re.search(
-                            r'@(\S+?)/', f'{res_url}').group(1)
-                        res_url = res_url.replace(
-                            f'@{res_url2}', f'/{res_url2}')
+            for k,v in cdn_list.items():
+                for cdn in v:
+                    if  k == 'github':
                         self.f_to_w.write(f'\n\t{cdn}{res_url}')
-                    except:
-                        pass
+                    elif k == 'raw':
+                        try:
+                            res_url2 = re.search(
+                                r'@(\S+?)/', f'{res_url}').group(1)
+                            res_url3 = res_url.replace(
+                                f'@{res_url2}', f'/{res_url2}')
+                            self.f_to_w.write(f'\n\t{cdn}{res_url3}')
+                        except:
+                            pass
+                    elif k == 'npm':
+                        try:
+                            extension = re.search(r'.*\.(.*)$',res_url).group(1)
+                            if extension.lower() in ['png','webp','gif','jpg','jpge','svg','raw']:
+                                # 如果是图片则使用npm的图片仓库
+                                resource_path = re.search(r'.*?/.*?@.*?/(.*)$',res_url).group(1)
+                                self.f_to_w.write(f'\n\t{cdn}{npm_name_of_pic_bed}@{self.pic_bed_hosting_latest_ver}/{resource_path}')
+                            elif extension.lower() in ['htm','html']:
+                                # 如果是html则使用npm的html仓库
+                                resource_path = re.search(r'.*?/.*?@.*?/(.*)$',res_url).group(1)
+                                self.f_to_w.write(f'\n\t{cdn}{npm_name_of_html_package}@{self.html_hosting_latest_ver}/{resource_path}')
+                        except Exception as e:
+                            print('[warning] '+str(e), f', when writing npm cdn')
+
             if not cursor == None:
                 self.f_to_w.write(
                     f'\n\thash={self.get_hash_in_db(url,cursor)}')
@@ -158,6 +190,7 @@ class main():
                 self.f_to_w = open(
                     f'./{self.name_of_conf_to_writ}', 'w', encoding='utf8')
                 self.f_to_w.write('@global\n\topen_timeout=0s')
+                self.get_latest_version_of_npm_hosting()
                 for url in f.readlines():
                     url = url.replace('\n', '')
                     # 验证是否是合法url
@@ -167,6 +200,7 @@ class main():
 
                         self.thread_list.append(self.pool.submit(
                             self.import_url_to_file, self.url_encode(url)))
+                
             except Exception as e:
                 print(e)
 
