@@ -94,6 +94,8 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 `is_import_html_to_conf`为`True`时会把html文件也导入到`pic.conf`。
 
+`config.py`中可以设置是否启用npm空间，只要填写npm空间名字就可以，详见[教程](https://xingpingcn.top/npm%E5%9B%BE%E5%BA%8A%EF%BC%88%E4%B8%8D%E9%9C%80%E8%A6%81%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%EF%BC%89.html)
+
 <font color=#808080 >*注：若在没有更新repo资源的时候重复刷新tag可能会生成多个`draft` release；使用该.py文件需要上传两次博客，见[和hexo配合使用](#和hexo配合使用)的第二个示例*</font>
 
 > Github账户中添加Token:
@@ -127,6 +129,8 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 ```
 
 </details>
+
+如果需要接入透明模式，请看[这里](https://xingpingcn.top/%E4%BD%BF%E7%94%A8freecdn-js%E6%8F%90%E9%AB%98hexo%E5%8D%9A%E5%AE%A2%E7%9A%84cdn%E7%A8%B3%E5%AE%9A%E6%80%A7.html#%E6%8E%A5%E5%85%A5%E9%80%8F%E6%98%8E%E6%A8%A1%E5%BC%8F%E3%80%90%E5%8F%AF%E9%80%89%E3%80%91)
 
 ## 脚本运行逻辑
 
@@ -165,7 +169,7 @@ https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@tag/manifest-full.txt
 
 ```powershell
     f:
-    cd f:/blog
+    cd f:/blog #博客根目录
     hexo clean && hexo g
     python ./import_to_db_with_urls_txt.py
     python ./import_to_db_with_hexo_blog.py #如果是hexo博客
@@ -175,8 +179,11 @@ https://cdn.jsdelivr.us/gh/xingpingcn/xingpingcn.github.io@tag/manifest-full.txt
     freecdn manifest --merge ../pic.conf -o manifest-full.txt #用于生成外置的freecdn-manifest.txt
     freecdn js --make --cdn "https://jsd.cdn.zzko.cn/gh/user/repo@main/freecdn-internal/ver/freecdn-main.min.js unpkg jsdelivr elemecdn " #此命令为配置cdn链接用于加速.min.js文件，详细请查看freecdn项目的GitHub
     gulp && hexo d
-    python ../generate_external_manifest_file.py 
-    hexo d #如果“is_refresh_tag”为 “True”需要上传两次
+    python ../generate_external_manifest_file.py #会在.deploy_git生成文件
+    cd f:/blog/.deploy_git
+    git add --all #如果“is_refresh_tag”为 “True”需要上传两次
+    git commit -m "update"
+    git push origin main #如果需要添加origin地址，请自行添加
     python ../refresh_cdn_cache.py
 ```
 ## 后记
