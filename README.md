@@ -82,17 +82,17 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 如果你像我一样把文件（图片和某些js）放在github（我使用[picx.xpoet.cn](https://picx.xpoet.cn/)作为管理工具，上传图片的同时能够自动生成cdn链接），能十分方便生成cdn链接。
 
-在`config.py`文件可以设置是否使用代理（v2ray代理，默认开启），需要自行设置。
-
 在上传hexo博客后使用`refresh_cdn_cache.py`进行刷新。通过访问`purge.jsdelivr.net/resource`来刷新`cdn.jsdelivr.net/resource`缓存。
 
 > P.S. 官方进行了限制，需要用邮箱申请权限才能生效，比较麻烦（可以设置`generate_external_manifest_file.py`中的`is_refresh_tag`为 `True`，这样可以刷新博客的release`tag`从而达到即时更新cdn缓存。
 
-`generate_external_manifest_file.py`用于生成`freecdn-manifest.txt`，`.txt`储存用于加速`manifest-full.txt`的cdn链接。需要在文件中填写`user`、`repo`等信息。
+`generate_external_manifest_file.py`用于生成`freecdn-manifest.txt`，`.txt`储存用于加速`manifest-full.txt`的cdn链接。需要在`config.py`文件中填写`user`、`repo`等信息。
 
 `generate_external_manifest_file.py`中的`is_refresh_tag`为 `True`（config.py中设置）时能刷新博客的release`tag`从而达到即时更新cdn缓存的目的（仅刷新`freecdn-manifest.txt`中加速`manifest-full.txt`的cdn）。需要填写`user`、`token`等信息。
 
-`is_import_html_to_conf`为`True`时会把html文件也导入到`pic.conf`。
+在`config.py`文件可以设置是否使用代理（v2ray代理，默认开启），需要自行设置。
+
+`config.py`的`is_import_html_to_conf`为`True`时会把html文件也导入到`pic.conf`。
 
 `config.py`中可以设置是否启用npm空间，只要填写npm空间名字就可以，详见[教程](https://xingpingcn.top/npm%E5%9B%BE%E5%BA%8A%EF%BC%88%E4%B8%8D%E9%9C%80%E8%A6%81%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%EF%BC%89.html)
 
