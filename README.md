@@ -24,7 +24,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 `url`的格式也可以为`http(s)://raw.githubusercontent.com/user/repo/your_branch/xxx`。
 
-`url`也可以不带有`your_branch`，或许不能生成`raw.githubusercontent.com`的cdn链接，但是能生成`类cdn.jsdelivr.net/gh/`的cdn链接。可以看到下面`.conf`的示例中的https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/app.js`url`只生成了4个cdn链接。
+`url`也可以不带有`your_branch`，或许不能生成`raw.githubusercontent.com`的cdn链接，但是能生成`类cdn.jsdelivr.net/gh/`的cdn链接。可以看到下面`.conf`的示例中的`https://jsd.cdn.zzko.cn/gh/xingpingcn/website.comments/app.js`只生成了4个cdn链接。
 
 <font color=#808080>*注：若要成功生成`raw.githubusercontent.com`请确保原始url中在`@your_branch`之前不存在`@`*</font>
 
