@@ -130,7 +130,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 </details>
 
-如果需要接入透明模式，请看[这里](https://xingpingcn.top/%E4%BD%BF%E7%94%A8freecdn-js%E6%8F%90%E9%AB%98hexo%E5%8D%9A%E5%AE%A2%E7%9A%84cdn%E7%A8%B3%E5%AE%9A%E6%80%A7.html#%E6%8E%A5%E5%85%A5%E9%80%8F%E6%98%8E%E6%A8%A1%E5%BC%8F%E3%80%90%E5%8F%AF%E9%80%89%E3%80%91)
+如果需要[透明接入模式](https://github.com/EtherDream/freecdn/tree/master/docs/transparent-mode)，请看[这里](https://xingpingcn.top/%E4%BD%BF%E7%94%A8freecdn-js%E6%8F%90%E9%AB%98hexo%E5%8D%9A%E5%AE%A2%E7%9A%84cdn%E7%A8%B3%E5%AE%9A%E6%80%A7.html#%E6%8E%A5%E5%85%A5%E9%80%8F%E6%98%8E%E6%A8%A1%E5%BC%8F%E3%80%90%E5%8F%AF%E9%80%89%E3%80%91)
 
 ## 脚本运行逻辑
 
