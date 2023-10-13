@@ -2,6 +2,8 @@
 blog_md_file_dir = './source/_posts'
 blog_public_dir = './public'
 blog_deploy_dir ='./.deploy_git'
+#静态文件相对于repo的位置，开头不能有“/”，结尾必须有“/”。如果是在根目录则留空：''
+path_of_static_resoure_relative_to_root_of_repo = 'static_source/'
 #储存静态文件的GitHub repo信息
 user = ''
 repo = ''
@@ -18,15 +20,15 @@ cdn_list = {
         'github': ['https://jsd.cdn.zzko.cn/gh/', 'https://cdn.jsdelivr.us/gh/',
             'https://cdn.jsdelivr.ren/gh/', 'https://cdn.jsdelivr.net/gh/'], 
         'raw': ['https://raw.githubusercontent.com/'],
-        "npm": ['https://npm.onmicrosoft.cn/','https://jsd.onmicrosoft.cn/npm/','https://cdn.jsdelivr.net/npm/','https://unpkg.com/']
+        "npm": ['https://npm.onmicrosoft.cn/','https://jsd.cdn.zzko.cn/npm/','https://jsd.onmicrosoft.cn/npm/','https://cdn.jsdelivr.net/npm/']
 }
 
 is_output_to_txt = False #输出md文件中的url到txt文件urls_in_md.txt
 
-is_import_html_to_conf = True #导入“blog_public_dir”中的html到pic.conf
+is_import_html_to_conf = False #导入“blog_public_dir”中的html到pic.conf
 html_file_to_ignore = ['']
 
-is_use_proxy = True
+is_use_proxy = False
 if is_use_proxy:    
     proxies_dict = {'http': 'socks5://127.0.0.1:10808',
                         'https': 'socks5://127.0.0.1:10808'}

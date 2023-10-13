@@ -93,9 +93,9 @@ def CalcFileSha256_with_base64(filname):
 
 def main():
     os.chdir(sys.path[0])  # os.chdir(sys.path[0])把当前py文件所在路径设置为当前运行路径.
-    with open(os.path.join(f'.\{blog_deploy_dir}', 'freecdn-manifest.txt'), 'w', encoding='utf8') as f:
+    with open(os.path.join(f'{blog_deploy_dir}/{path_of_static_resoure_relative_to_root_of_repo}', 'freecdn-manifest.txt'), 'w', encoding='utf8') as f:
         hash256 = CalcFileSha256_with_base64(
-            os.path.join(f'.\{blog_deploy_dir}', 'manifest-full.txt'))
+            os.path.join(f'{blog_deploy_dir}/{path_of_static_resoure_relative_to_root_of_repo}', 'manifest-full.txt'))
         f.write('/manifest-full.txt')
         if is_refresh_tag:
             post_new_release()
@@ -103,11 +103,11 @@ def main():
             for cdn in v:
                 if  k  == 'github':
                     if is_refresh_tag:
-                        f.write(f'\n\t{cdn}{user}/{repo}@{branch_sha}/manifest-full.txt')
+                        f.write(f'\n\t{cdn}{user}/{repo}@{branch_sha}/{path_of_static_resoure_relative_to_root_of_repo}manifest-full.txt')
                     else:
-                        f.write(f'\n\t{cdn}{user}/{repo}@{branch}/manifest-full.txt')
+                        f.write(f'\n\t{cdn}{user}/{repo}@{branch}/{path_of_static_resoure_relative_to_root_of_repo}manifest-full.txt')
                 elif k == 'raw':
-                    f.write(f'\n\t{cdn}{user}/{repo}/{branch}/manifest-full.txt')
+                    f.write(f'\n\t{cdn}{user}/{repo}/{branch}/{path_of_static_resoure_relative_to_root_of_repo}manifest-full.txt')
         f.write(f'\n\thash={hash256}')
         f.write('\n@include\n\t/manifest-full.txt\n@global\n\topen_timeout=0s')
     print('[success] manifest_file generaeted.')

@@ -30,7 +30,7 @@ class main2(main):
             print(e, '↓\nurl: '+url)
         else:
             try:
-                res_url = f'{user}/{repo}@{branch}/{filename_encode}'
+                res_url = f'{user}/{repo}@{branch}/static_source/{filename_encode}'
                 self.write_file(url,res_url=res_url,hash256=hash256)
             except Exception as e:
                 print(e, '↓\n[error] in writing file - url: '+url)

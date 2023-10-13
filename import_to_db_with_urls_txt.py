@@ -7,7 +7,7 @@ import urllib
 import requests
 import hashlib
 import base64
-import sqlite3
+import sqlite3,json
 from config import *
 os.chdir(sys.path[0])  # os.chdir(sys.path[0])把当前py文件所在路径设置为当前运行路径.
 
@@ -82,9 +82,13 @@ class main():
                 self.pic_bed_hosting_latest_ver = r.json()["dist-tags"]["latest"]
             
         if npm_name_of_html_package:
-            r = requests.get(f'https://registry.npmjs.org/{npm_name_of_html_package}',proxies=proxies_dict)
-            if r.status_code == 200:
-                self.html_hosting_latest_ver = r.json()["dist-tags"]["latest"]
+            try:
+                with open(os.path.join('./.deploy_git','package.json'),'r',encoding='utf8') as f:
+                    self.html_hosting_latest_ver = json.load(f)['version']
+            except:
+                r = requests.get(f'https://registry.npmjs.org/{npm_name_of_html_package}',proxies=proxies_dict)
+                if r.status_code == 200:
+                    self.html_hosting_latest_ver = r.json()["dist-tags"]["latest"]
 
     def CalcFileSha256_with_base64(self, filname):
         ''' calculate file sha256 '''
