@@ -2,6 +2,8 @@
 blog_md_file_dir = './source/_posts'
 blog_public_dir = './public'
 blog_deploy_dir ='./.deploy_git'
+path_of_url_txt = './urls.txt'
+path_of_package_json = ''
 #静态文件相对于repo的位置，开头不能有“/”，结尾必须有“/”。如果是在根目录则留空：''
 path_of_static_resoure_relative_to_root_of_repo = 'static_source/'
 #储存静态文件的GitHub repo信息

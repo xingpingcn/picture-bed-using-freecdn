@@ -60,7 +60,7 @@ class main():
         param url 为url encode后的url
         '''
         re_obj = re.compile(
-            f'http.*?(?:(?<=/gh/)|(?=raw.githubusercontent.com/))(.*)\s*')
+            f'http.*?(?:(?<=/gh/)|(?=raw.githubusercontent.com/)|(?<=/npm/))(.*)\s*')
         res = re_obj.search(url)
         if res:
             if not 'raw.githubusercontent.com' in res.group(1):
@@ -83,7 +83,7 @@ class main():
             
         if npm_name_of_html_package:
             try:
-                with open(os.path.join('./.deploy_git','package.json'),'r',encoding='utf8') as f:
+                with open(f'{path_of_package_json}','r',encoding='utf8') as f:
                     self.html_hosting_latest_ver = json.load(f)['version']
             except:
                 r = requests.get(f'https://registry.npmjs.org/{npm_name_of_html_package}',proxies=proxies_dict)
@@ -189,7 +189,7 @@ class main():
             sqlite3_conn.close()
 
     def run(self):
-        with open('./urls.txt', 'r', encoding='utf8') as f:
+        with open(f'{path_of_url_txt}', 'r', encoding='utf8') as f:
             try:
                 self.f_to_w = open(
                     f'./{self.name_of_conf_to_writ}', 'w', encoding='utf8')

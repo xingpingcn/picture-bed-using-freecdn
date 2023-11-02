@@ -30,7 +30,7 @@ class main2(main):
             print(e, '↓\nurl: '+url)
         else:
             try:
-                res_url = f'{user}/{repo}@{branch}/static_source/{filename_encode}'
+                res_url = f'{user}/{repo}@{branch}/{path_of_static_resoure_relative_to_root_of_repo}{filename_encode}'
                 self.write_file(url,res_url=res_url,hash256=hash256)
             except Exception as e:
                 print(e, '↓\n[error] in writing file - url: '+url)
@@ -53,8 +53,8 @@ class main2(main):
                 self.pool.submit(self.get_urls_in_md_file_and_generate, md_file, [re_obj_for_link_tag, re_obj_for_image_tag, re_obj_for_headimg_tag, re_obj_for_pic_tag])
         if is_import_html_to_conf:
             for filename in os.listdir(f'{blog_public_dir}'):
-                if not filename in html_file_to_ignore:
-                    if re.match(r'.*\.html', filename):
+                if re.match(r'.*\.html', filename):
+                    if not filename in html_file_to_ignore:
                         self.pool.submit(self.import_html_to_file,filename)
         self.pool.shutdown()
         wait(self.thread_list)

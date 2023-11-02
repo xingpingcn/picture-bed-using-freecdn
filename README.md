@@ -20,7 +20,7 @@ freecdn-js能提高网站稳定性，如果其中一个cdn链接不可用则启�
 
 只需要把放在github的图片的url（以.xxx结尾，如.png、.css、.js）放在`urls.txt`，每行放一个url，并在同一个文件夹内运行`import_to_db_with_urls_txt.py`，即可生成`custom.conf`（可以用`freecdn manifest --merge $path_to_custom.conf`合并到`freecdn-manifest.txt`），`custom.conf`由几个内置的cdn模板生成。
 
-`url`的格式为`http(s)://cdn/user/repo@your_branch/xxx`。其中`cdn`可以是`cdn.jsdelivr.net/gh/`这种免费cdn。
+`url`的格式为`http(s)://cdn/user/repo@your_branch/xxx`。其中`cdn`可以是`cdn.jsdelivr.net/gh/`，`cdn.jsdelivr.net/npm/`这种免费cdn。
 
 `url`的格式也可以为`http(s)://raw.githubusercontent.com/user/repo/your_branch/xxx`。
 
