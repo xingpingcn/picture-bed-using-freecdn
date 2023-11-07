@@ -60,16 +60,21 @@ class main():
         param url 为url encode后的url
         '''
         re_obj = re.compile(
-            f'http.*?(?:(?<=/gh/)|(?=raw.githubusercontent.com/)|(?<=/npm/))(.*)\s*')
+            f'http(.*?)(?:(?<=/gh/)|(?=raw.githubusercontent.com/)|(?<=/npm/))(.*)\s*')
         res = re_obj.search(url)
         if res:
-            if not 'raw.githubusercontent.com' in res.group(1):
-                return res.group(1)
+            if not 'raw.githubusercontent.com' in res.group(2):
+                if 'gh' in res.group(1):
+                    web_space = 'github'
+                elif 'npm' in res.group(1):
+                    web_space = 'npm'
+                return res.group(2), web_space
             else:
-                res = res.group(1).replace('raw.githubusercontent.com/', '')
-                re_res = re.search(r'.*?/.*?/(.*?)/.*', res).group(1)
+                res = res.group(2).replace('raw.githubusercontent.com/', '')
+                web_sapce = 'github'
+                re_res = re.search(r'.*?/.*?/(.*?)/.*', res).group(2)
                 res = res.replace(f'/{re_res}', f'@{re_res}')
-                return res
+                return res, web_sapce
         else:
             print(f'unsupported url\n({url})')
 
@@ -120,9 +125,10 @@ class main():
                 sqlite3_conn.commit()
             print(f'[success] import {url} to db')
 
-    def write_file(self,url,cursor=None,res_url=None,hash256 = None):
+    def write_file(self,url,cursor=None,res_url=None,hash256 = None,web_sapce=None):
         '''
         res_url的格式应该为.*?/.*?@.*?/(.*)$
+        web_sapce为none的时候表示从md文件中写入，不为none表示从urls.txt中写入
         '''
         
         with self.lock_for_write_file:
@@ -130,29 +136,35 @@ class main():
             for k,v in cdn_list.items():
                 for cdn in v:
                     if  k == 'github':
-                        self.f_to_w.write(f'\n\t{cdn}{res_url}')
+                        if web_sapce == 'github' or web_sapce == None:
+                            self.f_to_w.write(f'\n\t{cdn}{res_url}')
                     elif k == 'raw':
-                        try:
-                            res_url2 = re.search(
-                                r'@(\S+?)/', f'{res_url}').group(1)
-                            res_url3 = res_url.replace(
-                                f'@{res_url2}', f'/{res_url2}')
-                            self.f_to_w.write(f'\n\t{cdn}{res_url3}')
-                        except:
-                            pass
+                        if web_sapce == 'github' or web_sapce == None:
+                            try:
+                                res_url2 = re.search(
+                                    r'@(\S+?)/', f'{res_url}').group(1)
+                                res_url3 = res_url.replace(
+                                    f'@{res_url2}', f'/{res_url2}')
+                                self.f_to_w.write(f'\n\t{cdn}{res_url3}')
+                            except:
+                                pass
                     elif k == 'npm':
-                        try:
-                            extension = re.search(r'.*\.(.*)$',res_url).group(1)
-                            if extension.lower() in ['png','webp','gif','jpg','jpge','svg','raw']:
-                                # 如果是图片则使用npm的图片仓库
-                                resource_path = re.search(r'.*?/.*?@.*?/(.*)$',res_url).group(1)
-                                self.f_to_w.write(f'\n\t{cdn}{npm_name_of_pic_bed}@{self.pic_bed_hosting_latest_ver}/{resource_path}')
-                            elif extension.lower() in ['htm','html']:
-                                # 如果是html则使用npm的html仓库
-                                resource_path = re.search(r'.*?/.*?@.*?/(.*)$',res_url).group(1)
-                                self.f_to_w.write(f'\n\t{cdn}{npm_name_of_html_package}@{self.html_hosting_latest_ver}/{resource_path}')
-                        except Exception as e:
-                            print('[warning] '+str(e), f', when writing npm cdn')
+                        if web_sapce == 'npm':
+                            self.f_to_w.write(f'\n\t{cdn}{res_url}')
+                            continue
+                        if f'{user}' in res_url :
+                            try:
+                                extension = re.search(r'.*\.(.*)$',res_url).group(1)
+                                if extension.lower() in ['png','webp','gif','jpg','jpge','svg','raw'] and not npm_name_of_pic_bed == '':
+                                    # 如果是图片则使用npm的图片仓库
+                                    resource_path = re.search(r'.*?/.*?@.*?/(.*)$',res_url).group(1)
+                                    self.f_to_w.write(f'\n\t{cdn}{npm_name_of_pic_bed}@{self.pic_bed_hosting_latest_ver}/{resource_path}')
+                                elif extension.lower() in ['htm','html'] and not npm_name_of_html_package=='':
+                                    # 如果是html则使用npm的html仓库
+                                    resource_path = re.search(r'.*?/.*?@.*?/(.*)$',res_url).group(1)
+                                    self.f_to_w.write(f'\n\t{cdn}{npm_name_of_html_package}@{self.html_hosting_latest_ver}/{resource_path}')
+                            except Exception as e:
+                                print('[warning] '+str(e), f', when writing npm cdn')
 
             if not cursor == None:
                 self.f_to_w.write(
@@ -167,7 +179,7 @@ class main():
                 os.path.expanduser('~'), '.freecdn\custom.db'))
             cursor = sqlite3_conn.cursor()
             if not self.is_url_in_db(url, cursor):
-                res_url = self.url_split(url)
+                res_url,web_sapce = self.url_split(url)
                 path_url = res_url.replace('/', '')  # 下载文件命名
                 if not os.path.exists(f'{dir_for_custom_conf}/{path_url}'):
                     self.down_file(url, path_url)
@@ -180,8 +192,8 @@ class main():
             print(e, '↓\nurl: '+url)
         else:
             try:
-                res_url = self.url_split(url)
-                self.write_file(url,cursor,res_url)
+                res_url, web_sapce = self.url_split(url)
+                self.write_file(url,cursor,res_url,web_sapce=web_sapce)
             except Exception as e:
                 print(e)
         finally:
